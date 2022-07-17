@@ -2,37 +2,638 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.respon_nav_link_sub {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.responsive_nav_list {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.responsive_navbar {
+  display: none;
+}
+
+.ham_icon {
+  display: none;
+}
+
+.res_display {
+  display: none;
+}
+
+.more_crd {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.big_container {
+  margin-left: 142px;
+  margin-right: 142px;
+}
+
+.d-flex {
   display: flex;
-  flex-direction: column;
+
+}
+
+.align_cntr {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.justify_spc_btwn {
+  justify-content: space-between;
+}
+
+.justify_spc_ard {
+  justify-content: space-around;
+}
+
+.justify_spc_evely {
+  justify-content: space-evenly;
+}
+
+.editors_sections_banner {
+  padding-top: 35px;
+  /* padding-bottom: 25px; */
+}
+
+
+/*////////////// NavBar Start \\\\\\\\\\\\\\\\\  */
+.navbar_ {
+  height: 130px;
+  padding-bottom: 0px;
+  padding-top: 35px;
+}
+
+.navbar_shadow {
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+  box-shadow: 0px 2px 4px #0000001A;
+}
+
+/* .d-flex {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.navbar_logo {
+  width: 150px;
+  /* height: 47px; */
+}
+
+.navbar_logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav_list {
+  list-style-type: none;
+  /* align-items: center; */
+  padding: 0px;
+}
+
+.nav_link_list {
+  padding: 8px 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.down_nav_ {
+  padding: 8px 0px;
+}
+
+.down_nav_list {
+  padding: 9px 14px;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+
+/* ////////// Advertisement \\\\\\\\\\ */
+.advertiser {
+  background-color: #F0F0F0;
+  /* height: 150px; */
+  margin-top: 35px;
+  padding: 8px 5px;
+}
+
+.advertiser h5 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+/* ///////////  manufacturing Start \\\\\\\\\\\\\\\*/
+.manufact_banner {
+  margin-top: 35px;
+}
+
+.manufact_info {
+  width: 50%;
+}
+
+.manufact_info h5 {
+  color: #096FFA;
+  margin-bottom: 11px;
+}
+
+.manufact_info h1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.manufact_info p {
+  color: #222222;
+  font-size: 16px;
+}
+
+.manufact_info span {
+  color: #798692;
+  padding: 5px 5px;
+}
+
+/* .dot {
+  height: 15px;
+  width: 15px;
+  background-color: #798692;
+} */
+.btn {
+  padding: 12px 50px;
+  border-radius: 28px;
+  background: blue;
+  color: white;
+  border: none;
+}
+
+.manufact-sm-card {
+  margin-top: 35px;
+}
+
+.manfact_crd {
+  width: 22.2%;
+}
+
+.manfact_crd_img {
+  position: relative;
+}
+
+.manfact_crd_img span {
+  position: absolute;
+  bottom: 11px;
+  right: 8px;
+  color: white !important;
+  background: transparent linear-gradient(90deg, #FE8C00 0%, #F83600 100%);
+  padding: 2px 2px !important;
+  font-size: 10px !important;
+  font-weight: 600;
+
+}
+
+.manfact_crd h5 {
+  color: #096FFA;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.manfact_crd p {
+  font-size: 15px;
+  width: 88%;
+}
+
+.manfact_crd span {
+  color: #798692;
+  padding: 5px 2px;
+  font-size: 12px;
+}
+
+.second_ad {
+  width: -webkit-fill-available;
+}
+
+/* ///////////// Editor and Popular \\\\\\\\\\\\\\\\\\\ */
+.ed_pop {
+  width: 32.5%;
+}
+
+.ed_pop_img {
+  width: 372px;
+}
+
+.ed_pop_img img {
+  width: 90%;
+}
+
+.ed_pop_head {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #096FFA;
+}
+
+.ed_pop_txt {
+  font-size: 18px;
+  font-weight: 500;
+  width: 25vw;
+  word-spacing: 1px;
+}
+
+.ed_pop_span {
+  font-size: 12px;
+  color: #798692;
+}
+
+.ed_pop_sec2 {
+  margin-top: 39px;
+  padding-top: 33px;
+  margin-bottom: 38px;
+  border-right: 1px solid #E3E3E3;
+  padding-right: 25px;
+}
+
+.ed_pop_line {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.ed_pop_line2 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.ed_pop_line3 {
+  padding-top: 12px;
+}
+
+.ed_pop_sec2txt {
+  padding-left: 8px;
+}
+
+.ed_pop_sec2txt h5 {
+  margin-top: 5px;
+  color: #096FFA;
+  margin-bottom: 8px;
+}
+
+.ed_pop_sec2txt p {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  width: 278px;
+}
+
+.ed_pop_sec2txt span {
+  font-size: 12px;
+  color: #798692;
+}
+
+.ed_pop_ad {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+/* .ad_img { */
+/* width: 300px;
+  height: 250px; */
+/* } */
+
+.ad_head {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 10px 15px;
+  background-color: #F0F0F0;
+  color: #222222;
+  font-weight: 400;
+}
+
+.ad_img img {
+  width: 100%;
+  height: 250px;
+}
+
+/* //////////////////////////// VCCTV \\\\\\\\\\\\\\\\\\\\\ */
+.vcctv_bg {
+  border: 1px solid #00000040;
+  padding: 25px 25px;
+  border-radius: 14px;
+  margin-top: 35px;
+}
+
+.vcc_tv_hed {
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.vcctv_tv {
+  width: 50%;
+}
+
+.vcctv_tv iframe {
+  border-radius: 14px;
+  width: 100%;
+  height: 308px;
+}
+
+.vcctv_txt {
+  width: 50%;
+}
+
+.vcctv_txt h5 {
+  color: #096FFA;
+  font-size: 12px;
+}
+
+.vcctv_txt h2 {
+  color: #222222;
+  font-size: 24px;
+  width: 430px;
+}
+
+.vcctv_txt p {
+  color: #222222;
+  /* font-size: 14px; */
+}
+
+.vcctv_txt span {
+  color: #888888;
+  font-size: 12px;
+}
+
+/* ///////////////twitter_section\\\\\\\\\\\\\\\\ */
+.twitter_section {
+  margin-top: 50px;
+  padding-bottom: 0px;
+}
+
+.twitter_img {
+  padding-right: 20px;
+  border-right: 1px solid #e3e3e3;
+  height: 400px;
+  position: relative;
+}
+
+.twitter_img_txt {
+  position: absolute;
+  bottom: 1px;
+  left: 4px;
+  background-color: #ededed4f;
+  width: 89%;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 0px 8px;
+}
+
+.twitter_img_txt span {
+  color: #888888;
+  font-size: 12px;
+}
+
+.twitter_img_txt p {
+  margin: 10px 0px;
+  font-size: 12px;
+}
+
+.infographic_img h1 {
+  margin-top: 0px;
+}
+
+.ad_bg {
+  padding: 10px 15px;
+  background-color: #F0F0F0;
+}
+
+
+
+/*//////////////////MAin card\\\\\\\\\\\\\\  */
+.main_crds_box {
+  padding: 5px;
+  background: #FAFAFA;
+  border: 1px solid #EDEDED;
+}
+
+
+/*//////////////VCCPREMIUM\\\\\\\\\\\\\\  */
+
+.vccpremium {
+  background-color: black;
+  padding: 28px 5px;
+  margin-top: 40px;
+}
+
+.vccprim_had h2 {
+  color: white;
+  margin-top: 0px;
+
+}
+
+.vccpremium_img_txt {
+  padding: 15px 10px;
+  background-color: white;
+  width: 240px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.vccpmium_span span {
+  right: 38% !important;
+
+}
+
+.vccpremium_img_txt h5 {
+  color: #096FFA;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.vccpremium_img_txt p {
+  color: black;
+}
+
+.vccpremium_img_txt span {
+  color: #888888;
+  font-size: 12px;
+}
+
+
+.evnts_blocks {
+  border: 1px solid black;
+  padding: 4px 4px;
+  box-shadow: -2px 5px 10px #0000000D;
+  border: 1px solid #0000001A;
+  border-radius: 12px;
+  width: 305px;
+  margin-bottom: 15px;
+}
+
+.evnts_txt {
+  width: 175px;
+}
+
+.evnts_txt h4 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.evnts_txt p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* ///////////////////////INPUT BOX\\\\\\\\\\\\\\\\\\\\ */
+.input_BBox {
+  background-color: #000000;
+  /* height: 130px; */
+  padding: 15px 0px;
+  border-radius: 14px;
+  margin: 30px 0px;
+}
+
+.input_txt p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.input_txt h5 {
+  margin-top: 5px;
+  font-size: 15px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input_field input {
+  width: 350px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #FFFFFF34;
+  border: none;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input_btn button {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #096FFA;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* //////////////////// Stories card \\\\\\\\\\\\\\\\\ */
+.stes_crd {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.stes_crd_info {
+  padding-left: 10px;
+}
+
+.stes_crd_info h5 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #096FFA;
+}
+
+.stes_crd_info span {
+  color: #798692;
+  font-size: 12px;
+}
+
+.stes_crd_info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 23vw;
+}
+
+.stes_crd2 {
+  margin-top: 30px;
+}
+
+/*////////////// Footer Start\\\\\\\\\\\\\ */
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 40px 0px 35px 0px;
+  margin-top: 30px;
+}
+
+.footer_head {
+  text-align: center;
+
+}
+
+.footer_head h2 {
+  margin: 0px;
+}
+
+.footer_head h2 span {
+  color: #1d569a;
+}
+
+.footer_head p {
+  font-size: 12px;
+}
+
+.footer_head p span {
+  /* font-size: 12px; */
+  padding: 3px 7px;
+  border-right: 2px solid grey;
+}
+
+.footer_head p img {
+  padding: 6px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////[[[[[[[[[[[[[[ Slider Start   ]]]]]]]]]]]]]]\\\\\\\\\\\\\\\\ */
+#main_slider_container {
+
+  position: relative;
+}
+
+#slider {
+  width: 100%;
+  height: 300px;
+  background-color: #8d7878;
+
+}
+
+.slider_icon {
+  position: absolute;
+  right: 0px;
+  top: 43%;
+  border-radius: 100%;
+  background: white;
+}
+
+.slider-card {
+  width: 320px;
+  height: 200px;
+  background-color: red;
+  display: inline-block;
 }
