@@ -13,6 +13,7 @@ import { Infopartner, founder, tmt, techcircle, mergers, financial, vccpremium, 
 import Vcctv from './vcctv';
 import Input from './input';
 import Morestories from './morestories';
+import Upeventrespon from './upeventrespon';
 // import CardSlider from './cardslider';
 
 
@@ -58,6 +59,7 @@ function App() {
       <Vccpremium info={vccpremium} />
 
       <Upevent info={upevents} />
+      <Upeventrespon />
 
       <Maincards heading="Founders" info={founder} />
 

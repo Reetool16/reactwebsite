@@ -14,8 +14,8 @@ function Vccpremium(props) {
                             VCCircle Premium <img src="./img/crown.png" alt="" />
                         </h2>
                     </div>
-                    <div>
-                        <button className='btn'>SUBSCRIBE</button>
+                    <div className='subscribe_btn_desk'>
+                        <button className='sub_btn'>SUBSCRIBE</button>
                     </div>
                 </div>
 
@@ -59,6 +59,10 @@ function Vccpremium(props) {
                         </div>
                     </div>
                 </Swiper>
+
+                <div className='subscribe_btn_respon'>
+                    <button className='sub_btn'>SUBSCRIBE</button>
+                </div>
             </div>
         </div>
 

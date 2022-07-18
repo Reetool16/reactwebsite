@@ -2,6 +2,30 @@
   text-align: center;
 }
 
+.upcoimg_desk_ {
+  display: block;
+}
+
+.subscribe_btn_desk {
+  display: block;
+}
+
+.sub_btn {
+  padding: 12px 50px;
+  border-radius: 28px;
+  background: blue;
+  color: white;
+  border: none;
+}
+
+.subscribe_btn_respon {
+  display: none;
+}
+
+.upcoimg_events_respons {
+  display: none !important;
+}
+
 .respon_nav_link_sub {
   display: none;
 }

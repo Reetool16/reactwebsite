@@ -9,12 +9,12 @@ function Upevent(props) {
 
           <div className='big_container'>
                <div className='d-flex justify_spc_btwn align_cntr'>
-                    <div className=''>
+                    <div className='Upevent_heading'>
                          <h2>
                               Upcoming Events
                          </h2>
                     </div>
-                    <div>
+                    <div className='Upevent_heading'>
                          <p>
                               View more <img src="./img/Iconright.svg" alt="" />
                          </p>
@@ -41,13 +41,15 @@ function Upevent(props) {
                          {props.info.map((item) => {
                               return (
                                    <SwiperSlide>
-                                        <div className="d-flex justify_spc_btwn align_cntr evnts_blocks">
-                                             <div>
-                                                  <img src={item.src} alt="limited" />
-                                             </div>
-                                             <div className="evnts_txt">
-                                                  <h4>{item.heading}</h4>
-                                                  <p>{item.txt}</p>
+                                        <div className='upcoimg_desk_'>
+                                             <div className="d-flex justify_spc_btwn align_cntr evnts_blocks ">
+                                                  <div>
+                                                       <img src={item.src} alt="limited" />
+                                                  </div>
+                                                  <div className="evnts_txt">
+                                                       <h4>{item.heading}</h4>
+                                                       <p>{item.txt}</p>
+                                                  </div>
                                              </div>
                                         </div>
                                    </SwiperSlide>

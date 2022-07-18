@@ -71,8 +71,8 @@ function Maincards(props) {
 
                          </div>
                     </Swiper>
-               </div >
-          </div >
+               </div>
+          </div>
 
      )
 }

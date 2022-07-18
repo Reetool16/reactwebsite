@@ -276,6 +276,16 @@
 }
 
 @media only screen and (min-width:310px) and (max-width: 768px) {
+     .subscribe_btn_desk {
+          display: none;
+     }
+
+     .subscribe_btn_respon {
+          display: block;
+          text-align: center;
+          margin-top: 15px;
+     }
+
      .twitter_img_txt {
           bottom: 16px;
           width: 94%;
@@ -287,8 +297,38 @@
           margin-bottom: 10px;
      }
 
+     .upcoimg_desk_ {
+          display: none;
+     }
+
+     .Upevent_heading h2 {
+          font-size: 2.5vw;
+     }
+
+     .Upevent_heading p {
+          font-size: 2vw;
+     }
+
+     .upcoimg_events_respons {
+          display: block !important;
+     }
+
      .evnts_blocks {
-          width: 94%;
+          justify-content: normal;
+          width: 100%;
+          margin: 0 auto;
+          margin-bottom: 15px;
+     }
+
+     .evnts_txt {
+          width: 100%;
+          margin-left: 12px;
+     }
+
+     .evnts_blocks h5 {
+          margin-bottom: 7px;
+          margin-top: 0;
+          color: #096FFA;
      }
 
      .evnts_txt h4 {
