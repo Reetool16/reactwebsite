@@ -29,7 +29,7 @@ export default function Manufacturing() {
 
                 {/* sudhir respons ad start*/}
 
-                <div className='big_container'>
+                <div className=''>
                     <div className='res_display '>
                         <div className='ed_pop res_ed_pop_sudhir'>
                             <div className='ad_bg'>

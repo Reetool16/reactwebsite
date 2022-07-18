@@ -21,7 +21,7 @@ export default function Twitter() {
                             <img src="./img/Infographic.png" alt="" />
                         </div>
 
-                        <div className='ed_pop restwo_sudhir '>
+                        <div className='ed_pop restwo_sudhir twiter_sudhir_responsive '>
                             <div className='ad_bg'>
                                 <h5 className='ad_head'>Advertisment</h5>
                                 <div className='ad_img'>
