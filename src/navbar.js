@@ -1,17 +1,29 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Advertisment from './advertisment'
 import { FaBars } from 'react-icons/fa'
 export default function Navbar() {
     const [hambur, setHambur] = useState(false)
+    const [nav, setNav] = useState()
+    const navbarref = useRef(null)
+    function show() {
+        setHambur(!hambur)
+        if (hambur === false) {
+            document.body.style.overflow = 'hidden'
+        }
+        else if (hambur === true) {
+            document.body.style.overflow = 'scroll'
+        }
+
+    }
     return (<>
         <div className="navbar_shadow">
-            <div className='big_container '>
+            <div className='big_container nav_res_big_container'>
                 <div className='navbar_ '>
                     <div className='d-flex justify_spc_btwn'>
 
                         <div className='navbar_logo'>
                             <div className='respons'>
-                                <a href="javascript:void(0);" className="ham_icon" onClick={() => setHambur(!hambur)}>
+                                <a href="javascript:void(0);" className="ham_icon" onClick={show}>
                                     <FaBars />
                                 </a>
                                 <img src="./img/VCC-logo.svg" alt="" className='respon_navbar_logo' />
@@ -33,7 +45,7 @@ export default function Navbar() {
 
                     {/* responsive nav  */}
 
-                    <div className={hambur ? "responsive_nav_list" : "responsive_navbar"}>
+                    <div className={hambur ? "responsive_nav_list" : "responsive_navbar"} >
                         <ul className=' justify_spc_btwn nav_list '>
                             <li className='down_nav_' ><a href="#" className='nav_link_list'>Home</a></li>
 

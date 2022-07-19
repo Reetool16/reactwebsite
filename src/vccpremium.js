@@ -28,7 +28,7 @@ function Vccpremium(props) {
                     // - Creative
                     modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
                     spaceBetween={10}
-                    slidesPerView={3}
+                    slidesPerView={4}
                     navigation
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}

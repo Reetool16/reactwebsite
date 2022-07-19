@@ -40,7 +40,7 @@ function Maincards(props) {
                     </div> */}
                     <Swiper
                          // effect='fade'
-                         effect='Cube'
+                         // effect='Cube'
                          // - Coverflow
                          // - Flip
                          // - Cards
@@ -60,7 +60,11 @@ function Maincards(props) {
                                         return (
                                              <SwiperSlide>
                                                   <div className='slidr_eachcrd main_crds_box'>
-                                                       <img src={item.src} alt="" />
+                                                       <div className='slidr_primum'>
+                                                            <img src={item.src} alt="" />
+                                                            <span>Premium</span>
+                                                       </div>
+
                                                        <p className="slidr_text">{item.para}</p>
                                                        <span className="slidr_author">{item.author}</span>
                                                   </div>

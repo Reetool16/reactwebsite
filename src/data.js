@@ -16,22 +16,22 @@ const Infopartner = [
      },
      {
           src: "./img/stock.png",
-          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LP",
+          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
           author: "30 September . Madhurima Nandy "
      },
      {
           src: "./img/stock.png",
-          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high",
+          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
           author: "30 September . Madhurima Nandy "
      },
      {
           src: "./img/stock.png",
-          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high",
+          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
           author: "30 September . Madhurima Nandy "
      },
      {
           src: "./img/stock.png",
-          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high",
+          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
           author: "30 September . Madhurima Nandy "
      }
 ]
@@ -244,6 +244,24 @@ const vccpremium = [
           src: "./img/cnsumrdai.png",
           vchead: "CONSUMER",
           para: "Sixth Sense Ventures invests in VC-backed fashion jewellery startup",
+          author: "30 September . Madhurima Nandy +1"
+     },
+     {
+          src: "./img/tmtpillr.png",
+          vchead: "TMT",
+          para: "Iron Pillar-backed CoreStack’s game plan to hit $1 bn in annual recurring revenue",
+          author: "30 September . Madhurima Nandy +1"
+     },
+     {
+          src: "./img/tmtpillr.png",
+          vchead: "TMT",
+          para: "Iron Pillar-backed CoreStack’s game plan to hit $1 bn in annual recurring revenue",
+          author: "30 September . Madhurima Nandy +1"
+     },
+     {
+          src: "./img/tmtpillr.png",
+          vchead: "TMT",
+          para: "Iron Pillar-backed CoreStack’s game plan to hit $1 bn in annual recurring revenue",
           author: "30 September . Madhurima Nandy +1"
      },
      {
