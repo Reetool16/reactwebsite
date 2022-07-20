@@ -1,9 +1,9 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/css';
 import 'swiper/scss/navigation';
-import { EffectFade } from 'swiper';
+// import { EffectFade } from 'swiper';
 function Maincards(props) {
 
 
@@ -58,7 +58,7 @@ function Maincards(props) {
                          // - Flip
                          // - Cards
                          // - Creative
-                         modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
+                         modules={[Navigation, Pagination, Scrollbar, A11y]}
                          spaceBetween={10}
                          slidesPerView={4}
                          navigation

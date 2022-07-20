@@ -196,7 +196,7 @@ export default function Morestories() {
                     </div>
 
                     <div className='big'>
-                        <ul className='d-flex nav_list justify_spc_ard flex_rap'>
+                        <ul className='d-flex nav_list justify_spc_ard flex_rap fot_nav'>
                             <li><a href="" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> About us</a></li>
                             <li><a href="" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Advertise with us</a></li>
                             <li><a href="" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Contact us</a></li>
@@ -206,7 +206,7 @@ export default function Morestories() {
                             <li><a href="" className='nav_link_list' style={{ color: "#FFFFFFB2" }}>Company Listing</a></li>
                             <li><a href="" className='nav_link_list' style={{ color: "#FFFFFFB2" }}>Tag Listing</a></li>
                         </ul>
-                        <ul className='d-flex nav_list justify_spc_evely flex_rap'>
+                        <ul className='d-flex nav_list justify_spc_evely flex_rap fot_nav2'>
                             <li>Our Product :</li>
                             <li>VCCircle</li>
                             <li>TechCircle</li>
