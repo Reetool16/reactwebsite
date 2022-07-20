@@ -9,7 +9,7 @@ export default function Morestories() {
                 <h2>More Stories</h2>
                 <div className='d-flex justify_spc_btwn responsive_stories '>
                     <div>
-                        <div className='d-flex stes_crd'>
+                        <div className='d-flex stes_crd imageswidth'>
                             <img src="./img/stesfinance.png" alt="" />
                             <div className='stes_crd_info'>
                                 <h5>FINANCE</h5>
@@ -21,7 +21,7 @@ export default function Morestories() {
                         </div>
 
                         <div className='d-flex stes_crd'>
-                            <div className='manfact_crd_img'>
+                            <div className='manfact_crd_img imageswidth'>
                                 <img src="./img/stesconsumer.png" alt="" />
                                 <span>PREMIUM</span>
                             </div>
@@ -36,7 +36,7 @@ export default function Morestories() {
 
 
 
-                        <div className='d-flex stes_crd'>
+                        <div className='d-flex stes_crd imageswidth'>
                             <img src="./img/stesppl.png" alt="" />
                             <div className="stes_crd_info">
                                 <h5>PEOPLE</h5>
@@ -51,7 +51,7 @@ export default function Morestories() {
 
                     <div>
                         <div className='d-flex stes_crd'>
-                            <div className='manfact_crd_img'>
+                            <div className='manfact_crd_img imageswidth'>
                                 <img src="./img/stesecomy.png" alt="" />
                                 <span>PREMIUM</span>
                             </div>
@@ -63,7 +63,7 @@ export default function Morestories() {
                                 <span>Madhurima Nandy</span>
                             </div>
                         </div>
-                        <div className='d-flex stes_crd'>
+                        <div className='d-flex stes_crd imageswidth'>
                             <img src="./img/stestmt.png" alt="" />
                             <div className="stes_crd_info">
                                 <h5>TMT</h5>
@@ -73,7 +73,7 @@ export default function Morestories() {
                             </div>
                         </div>
                         <div className='d-flex stes_crd'>
-                            <div className='manfact_crd_img'>
+                            <div className='manfact_crd_img imageswidth'>
                                 <img src="./img/stespipe.png" alt="" />
                                 <span>PREMIUM</span>
                             </div>

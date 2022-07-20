@@ -600,7 +600,7 @@
 
      .stes_crd_info p {
           width: auto;
-          /* font-size: 1.3vw; */
+          font-size: 2vw;
      }
 
      .ed_pop_sec2 {
@@ -648,6 +648,10 @@
 }
 
 @media only screen and (min-width:310px) and (max-width: 768px) {
+     .imageswidth img {
+          width: 200px;
+     }
+
      .vccprmi_respon {
           align-items: center;
           flex-direction: column;
@@ -681,16 +685,22 @@
      .vcctv_txt h2 {
           width: auto;
           font-size: 2.8vw;
+          text-align: justify;
      }
 
      .vcctv_txt p {
           color: #222222;
           font-size: 12px;
+          text-align: justify;
      }
 
      .vcctv_txt span {
           color: #888888;
           font-size: 8px;
+     }
+
+     .imageswidth img {
+          width: 150px;
      }
 
      .stes_crd_info p {
