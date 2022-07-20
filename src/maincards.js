@@ -42,14 +42,11 @@ function Maincards(props) {
                     </div> */}
                     <Swiper
                          breakpoints={{
-                              640: {
-                                   width: 640,
-                                   slidesPerView: 1,
-                              },
+
                               768: {
                                    width: 768,
                                    slidesPerView: 2,
-                              },
+                              }
                          }
                          }
                          // effect='fade'

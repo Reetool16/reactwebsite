@@ -481,6 +481,7 @@
 
      .ed_pop_txt {
           width: 100%;
+          font-size: 15px;
      }
 
      .res_ed_pop {
@@ -525,10 +526,12 @@
 
      .manufact_resinfo h1 {
           font-size: 3.2vw;
+          text-align: justify;
      }
 
      .manufact_resinfo p {
           font-size: 2.2vw;
+          text-align: justify;
      }
 
      .manufact_resinfo span {
@@ -558,6 +561,15 @@
 
      .main_crd_res_head p {
           font-size: 2vw;
+     }
+
+     .main_crd_res_head p img {
+          height: 7px;
+     }
+
+     .slidr_author {
+          font-size: 8px !important;
+          color: #939393;
      }
 
      .respon_crds_box {
@@ -664,6 +676,10 @@
      .slidr_text {
           font-size: 16px;
           width: 98%;
+     }
+
+     .swiper-container {
+          width: 768px;
      }
 }
 
@@ -803,14 +819,10 @@
 
 
 
-@media screen and (max-width: 640px) {
-     .swiper-container {
-          width: 640px;
-     }
-}
 
-@media screen and (max-width: 768px) {
+
+/* @media screen and (max-width: 768px) {
      .swiper-container {
           width: 768px;
      }
-}
+} */
