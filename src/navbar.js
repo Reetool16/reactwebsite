@@ -23,7 +23,7 @@ export default function Navbar() {
 
                         <div className='navbar_logo'>
                             <div className='respons'>
-                                <a href="/" className="ham_icon" onClick={show}>
+                                <a href="javascript:void(0)" className="ham_icon" onClick={show}>
                                     <FaBars />
                                 </a>
                                 <img src="./img/VCC-logo.svg" alt="" className='respon_navbar_logo' />
