@@ -5,7 +5,7 @@ export default function Twitter() {
         <>
             <section className="twitter_section">
                 <div className="big_container ">
-                    <div className="d-flex justify_spc_btwn res_twitter_sec flex_rap">
+                    <div className="d-flex justify_spc_btwn res_twitter_sec ">
                         <div className='twitter_img brdr_line'>
                             <img src="./img/twitter.png" alt="" />
                             <div className='twitter_img_txt'>

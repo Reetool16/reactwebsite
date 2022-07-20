@@ -50,7 +50,7 @@ export default function Manufacturing() {
                             <img src="./img/economy.png" alt="" />
                             <span className='respons_premium'>PREMIUM</span>
                         </div>
-                        <div>
+                        <div className='mnfact_crd_info_respon'>
                             <h5>ECONOMY</h5>
                             <p>Indian shares snap 5-day rally on weak global cues, post weekly gain</p>
                             <span>30 September</span>
@@ -65,7 +65,7 @@ export default function Manufacturing() {
                             <img src="./img/finance.png" alt="" />
                             <span className='respons_premium'>PREMIUM</span>
                         </div>
-                        <div>
+                        <div className='mnfact_crd_info_respon'>
                             <h5>FINANCE</h5>
                             <p>Paytm to shut Canada B2C app amid eroding market capitalisation</p>
                             <span>30 September</span>
@@ -78,7 +78,7 @@ export default function Manufacturing() {
                         <div>
                             <img src="./img/consumer.png" alt="" />
                         </div>
-                        <div>
+                        <div className='mnfact_crd_info_respon'>
                             <h5>CONSUMER</h5>
                             <p>Exclusive: PE-backed sauce maker Wingreens acquires Lok Capital-backed cereal maker</p>
                             <span>30 September</span>
@@ -92,7 +92,7 @@ export default function Manufacturing() {
                             <img src="./img/economyblock.png" alt="" />
                             <span className='respons_premium'>PREMIUM</span>
                         </div>
-                        <div>
+                        <div className='mnfact_crd_info_respon'>
                             <h5>ECONOMY</h5>
                             <p>GLOBAL MARKETS-European shares in the red after hawkish Fed comments</p>
                             <span>30 September</span>

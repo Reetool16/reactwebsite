@@ -85,6 +85,21 @@ export default function Morestories() {
                                 <span>Madhurima Nandy</span>
                             </div>
                         </div>
+                        <div className="stes_7_crd">
+                            <div className='d-flex stes_crd '>
+                                <div className='manfact_crd_img imageswidth'>
+                                    <img src="./img/block.png" alt="" />
+                                </div>
+
+                                <div className='stes_crd_info'>
+                                    <h5>CONSUMER</h5>
+                                    <p>Actor Tiger Shroff, BharatPe’s Ashneer Grover, others back Freadom</p>
+                                    <span>30 Sep </span>
+                                    <span>Madhurima Nandy,</span>
+                                    <span>Madhurima Nandy</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

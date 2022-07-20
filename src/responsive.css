@@ -196,13 +196,26 @@
 
      /* scroll */
      .slidr_text {
-          font-size: 1.2vw !important;
+          font-size: 2vw !important;
           width: 100% !important;
      }
 
      .slidr_author {
           font-size: 8px !important;
           color: #939393;
+     }
+
+     .restwo_sudhir {
+          width: 50% !important;
+          margin-top: 15px;
+     }
+
+     .res_twitter_sec {
+          flex-wrap: wrap;
+     }
+
+     .res_edi_pop {
+          width: auto !important;
      }
 }
 
@@ -211,29 +224,49 @@
      /* .ed_pop {
           display: none;
      } */
+     .manufact_info h1 {
+          margin-top: 5px;
+          margin-bottom: 5px;
+          font-size: 3vw;
+     }
+
      .ed_pop_ad {
           display: none;
      }
 
-     .swiper-slide {
+     /* .swiper-slide {
           width: 264px !important;
-     }
+     } */
 
      .vcctv_txt {
-          width: 54%;
+          width: 52%;
      }
 
      .vcctv_txt h2 {
           font-size: 14px;
-          width: 350px;
+          width: auto;
      }
 
      .vcctv_txt p {
           font-size: 12px;
      }
+
+     .res_twitter_sec {
+          flex-wrap: wrap;
+          align-items: center;
+     }
 }
 
 @media only screen and (min-width:768px) and (max-width: 868px) {
+     .vcctv_txt {
+          width: 54%;
+     }
+
+     .res_twitter_sec {
+          flex-wrap: wrap;
+          align-items: center;
+     }
+
      .flex_rap {
           flex-wrap: wrap;
      }
@@ -271,7 +304,7 @@
 
      /* scroll */
      .slidr_author {
-          font-size: 6px !important;
+          font-size: 9px !important;
           color: #939393;
      }
 }
@@ -309,11 +342,15 @@
      }
 
      .Upevent_heading h2 {
-          font-size: 2.5vw;
+          font-size: 3.5vw;
      }
 
      .Upevent_heading p {
           font-size: 2vw;
+     }
+
+     .Upevent_heading p img {
+          height: 5px;
      }
 
      .upcoimg_events_respons {
@@ -513,7 +550,7 @@
 
 
      .manufact_respimg img {
-          width: 200px;
+          width: 170px;
      }
 
      .big_fact_respimg img {
@@ -615,6 +652,10 @@
           font-size: 2vw;
      }
 
+     .stes_7_crd {
+          display: block;
+     }
+
      .ed_pop_sec2 {
           border: none;
      }
@@ -629,10 +670,12 @@
 
      .vcctv_txt {
           width: 100%;
+          text-align: justify;
      }
 
      .vcctv_txt h2 {
           width: auto;
+          font-size: 17px;
      }
 
      .vcctvs_direction {
@@ -660,6 +703,10 @@
 }
 
 @media only screen and (min-width:310px) and (max-width: 768px) {
+     .mnfact_crd_info_respon {
+          padding: 0px 5px;
+     }
+
      .imageswidth img {
           width: 200px;
      }
@@ -685,7 +732,7 @@
 
 @media only screen and (min-width:310px) and (max-width: 540px) {
      .ed_pop_sec2txt span {
-          display: block !important;
+          /* display: block !important; */
           font-size: 8px;
      }
 
@@ -724,6 +771,11 @@
           margin-top: 2px;
           font-size: 2.9vw;
           margin-bottom: 0px;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
      }
 
      .stes_crd_info span {

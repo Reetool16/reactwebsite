@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.stes_7_crd {
+  display: none;
+}
+
 .upcoimg_desk_ {
   display: block;
 }
@@ -360,7 +364,8 @@
 }
 
 .vcctv_txt {
-  width: 50%;
+  width: 48%;
+  text-align: justify;
 }
 
 .vcctv_txt h5 {
@@ -437,9 +442,9 @@
   width: 80%;
 }
 
-.swiper-slide {
+/* .swiper-slide {
   width: 320px !important;
-}
+} */
 
 /*//////////////VCCPREMIUM\\\\\\\\\\\\\\  */
 

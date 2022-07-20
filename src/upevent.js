@@ -8,58 +8,61 @@ function Upevent(props) {
      return (
 
           <div className='big_container'>
-               <div className='d-flex justify_spc_btwn align_cntr'>
-                    <div className='Upevent_heading'>
-                         <h2>
-                              Upcoming Events
-                         </h2>
+               <div>
+                    <div className='d-flex justify_spc_btwn align_cntr'>
+                         <div className='Upevent_heading'>
+                              <h2>
+                                   Upcoming Events
+                              </h2>
+                         </div>
+                         <div className='Upevent_heading'>
+                              <p>
+                                   View more <img src="./img/Iconright.svg" alt="" />
+                              </p>
+                         </div>
                     </div>
-                    <div className='Upevent_heading'>
-                         <p>
-                              View more <img src="./img/Iconright.svg" alt="" />
-                         </p>
-                    </div>
-               </div>
 
-               <Swiper
+                    <Swiper
 
-                    effect='Cube'
-                    // - Coverflow
-                    // - Flip
-                    // - Cards
-                    // - Creative
-                    modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
-                    spaceBetween={10}
-                    slidesPerView={3}
-                    navigation
-                    pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}>
-                    <div className="d-flex justify_spc_btwn flex_rap">
+                         effect='Cube'
+                         // - Coverflow
+                         // - Flip
+                         // - Cards
+                         // - Creative
+                         modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
+                         spaceBetween={10}
+                         slidesPerView={3}
+                         navigation
+                         pagination={{ clickable: true }}
+                         scrollbar={{ draggable: true }}
+                         onSwiper={(swiper) => console.log(swiper)}
+                         onSlideChange={() => console.log('slide change')}>
+                         <div className="d-flex justify_spc_btwn flex_rap">
 
-                         {props.info.map((item) => {
-                              return (
-                                   <SwiperSlide>
-                                        <div className='upcoimg_desk_'>
-                                             <div className="d-flex justify_spc_btwn align_cntr evnts_blocks ">
-                                                  <div>
-                                                       <img src={item.src} alt="limited" />
+                              {props.info.map((item) => {
+                                   return (
+                                        <div>
+                                             <SwiperSlide>
+                                                  <div className='upcoimg_desk_'>
+                                                       <div className="d-flex justify_spc_btwn align_cntr evnts_blocks ">
+                                                            <div>
+                                                                 <img src={item.src} alt="limited" />
+                                                            </div>
+                                                            <div className="evnts_txt">
+                                                                 <h4>{item.heading}</h4>
+                                                                 <p>{item.txt}</p>
+                                                            </div>
+                                                       </div>
                                                   </div>
-                                                  <div className="evnts_txt">
-                                                       <h4>{item.heading}</h4>
-                                                       <p>{item.txt}</p>
-                                                  </div>
-                                             </div>
+                                             </SwiperSlide>
                                         </div>
-                                   </SwiperSlide>
-                              )
-                         }
+                                   )
+                              }
 
-                         )}
+                              )}
 
 
-                         {/* <div className="d-flex justify_spc_btwn align_cntr evnts_blocks">
+                              {/* <div className="d-flex justify_spc_btwn align_cntr evnts_blocks">
                                    <div>
                                         <img src="./img/cloud.png" alt="cloud" />
                                    </div>
@@ -81,8 +84,9 @@ function Upevent(props) {
                                         </p>
                                    </div>
                               </div> */}
-                    </div>
-               </Swiper>
+                         </div>
+                    </Swiper>
+               </div>
           </div>
 
      )

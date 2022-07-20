@@ -76,7 +76,7 @@ export default function Editor(props) {
 
                     {/* sudhri */}
 
-                    <div className='ed_pop '>
+                    <div className='ed_pop res_edi_pop'>
                         <div className='ed_pop_ad'>
                             <h5 className='ad_head'>{props.ad}</h5>
                             <div className='ad_img res_ad_img'>
