@@ -30,7 +30,11 @@
 
 .slidr_text {
      font-size: 16px;
-     width: 90%;
+     width: 100%;
+     white-space: nowrap;
+     /* width: 50px; */
+     overflow: hidden;
+     text-overflow: ellipsis;
 }
 
 .slidr_author {

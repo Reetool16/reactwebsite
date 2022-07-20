@@ -434,8 +434,12 @@
   padding: 5px;
   background: #FAFAFA;
   border: 1px solid #EDEDED;
+  width: 80%;
 }
 
+.swiper-slide {
+  width: 320px !important;
+}
 
 /*//////////////VCCPREMIUM\\\\\\\\\\\\\\  */
 
@@ -460,7 +464,7 @@
 }
 
 .vccpmium_span span {
-  right: 14% !important;
+  right: 21% !important;
 
 }
 
