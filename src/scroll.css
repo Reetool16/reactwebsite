@@ -70,3 +70,7 @@
      padding: 2px 2px !important;
      font-weight: 600;
 }
+
+.swiper-container {
+     width: 480px;
+}

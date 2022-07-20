@@ -5,6 +5,8 @@ import 'swiper/css';
 import 'swiper/scss/navigation';
 import { EffectFade } from 'swiper';
 function Maincards(props) {
+
+
      return (
           <div>
                <div className='big_container responsive_big_container more_crd'>
@@ -39,6 +41,17 @@ function Maincards(props) {
                          })}
                     </div> */}
                     <Swiper
+                         breakpoints={{
+                              640: {
+                                   width: 640,
+                                   slidesPerView: 1,
+                              },
+                              768: {
+                                   width: 768,
+                                   slidesPerView: 2,
+                              },
+                         }
+                         }
                          // effect='fade'
                          // effect='Cube'
                          // - Coverflow

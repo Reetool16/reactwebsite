@@ -174,7 +174,8 @@
      }
 
      .manfact_crd {
-          width: 35%;
+          width: 44%;
+          margin-top: 12px;
      }
 
      .restwo_sudhir {
@@ -215,7 +216,7 @@
      }
 
      .swiper-slide {
-          width: 345px !important;
+          width: 264px !important;
      }
 
      .vcctv_txt {
@@ -364,6 +365,20 @@
           text-align: center;
           border: 1px solid #dcdcdc2e;
           border-radius: 14px;
+          animation: myfirst 5s 2;
+          animation-direction: normal;
+     }
+
+     @keyframes myfirst {
+          0% {
+               left: 0px;
+               top: 0px;
+          }
+
+          100% {
+               right: 0px;
+               top: 0px;
+          }
      }
 
      .down_nav_ {
@@ -616,6 +631,14 @@
           justify-content: normal;
      }
 
+     .swiper-button-next:after {
+          display: none;
+     }
+
+     .swiper-button-prev:after {
+          display: none;
+     }
+
 }
 
 @media only screen and (min-width:310px) and (max-width: 768px) {
@@ -759,5 +782,19 @@
 
      .swiper-slide {
           width: 260px !important;
+     }
+}
+
+
+
+@media screen and (max-width: 640px) {
+     .swiper-container {
+          width: 640px;
+     }
+}
+
+@media screen and (max-width: 768px) {
+     .swiper-container {
+          width: 768px;
      }
 }

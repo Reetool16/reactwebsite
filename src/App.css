@@ -635,7 +635,7 @@
 
 
 /* /////////////[[[[[[[[[[[[[[ Slider Start   ]]]]]]]]]]]]]]\\\\\\\\\\\\\\\\ */
-#main_slider_container {
+/* #main_slider_container {
 
   position: relative;
 }
@@ -660,4 +660,4 @@
   height: 200px;
   background-color: red;
   display: inline-block;
-}
+} */
