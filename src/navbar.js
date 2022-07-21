@@ -24,7 +24,7 @@ export default function Navbar() {
 
                         <div className='navbar_logo'>
                             <div className='respons'>
-                                <a href="#" className="ham_icon" onClick={show}>
+                                <a href="/#" className="ham_icon" onClick={show}>
                                     <FaBars />
                                 </a>
                                 <img src="./img/VCC-logo.svg" alt="" className='respon_navbar_logo' />
@@ -52,7 +52,7 @@ export default function Navbar() {
                                 <img src="./img/VCC-logo.svg" alt="" className='respon_navbar_logo' />
                             </span>
                             <span className='flt_rgt'>
-                                <a href="#" className="ham_icon" onClick={show}>
+                                <a href="/#" className="ham_icon" onClick={show}>
                                     <GrFormClose />
                                 </a>
                             </span>
