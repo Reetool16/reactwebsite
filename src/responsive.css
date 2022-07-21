@@ -55,7 +55,7 @@
      }
 
      .res_ad_img img {
-          height: 25vh;
+          height: 250px;
      }
 
      .big_container {
@@ -217,6 +217,10 @@
      .res_edi_pop {
           width: auto !important;
      }
+
+     .swiper-slide {
+          width: 330px !important;
+     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
@@ -254,6 +258,10 @@
      .res_twitter_sec {
           flex-wrap: wrap;
           align-items: center;
+     }
+
+     .swiper-slide {
+          width: 330px !important;
      }
 }
 
@@ -402,7 +410,11 @@
           text-align: center;
           border: 1px solid #dcdcdc2e;
           border-radius: 14px;
-          animation: myfirst linear 1s forwards;
+          animation: myfirst linear 0.1s forwards;
+          position: absolute;
+          top: 0%;
+          width: 100%;
+          background-color: white;
      }
 
      @keyframes myfirst {
@@ -415,6 +427,14 @@
           }
      }
 
+     .txt_cntr {
+          text-align: center;
+     }
+
+     .flt_rgt {
+          float: right;
+     }
+
      .down_nav_ {
           border-bottom: 1px solid #e3e3e330;
      }
@@ -425,7 +445,7 @@
      }
 
      .respon_navbar_logo {
-          width: 70px !important;
+          width: 85px !important;
      }
 
      .navbar_logo img {
@@ -590,6 +610,7 @@
 
      .main_crds_box {
           margin-bottom: 15px;
+          width: auto;
      }
 
      .main_crd_res_head h2 {
@@ -785,6 +806,18 @@
 
      .responsive_nav_list {
           text-align: left;
+          position: absolute;
+          top: 0%;
+          width: 100%;
+          background-color: white;
+     }
+
+     .txt_cntr {
+          text-align: center;
+     }
+
+     .flt_rgt {
+          float: right;
      }
 
      .ed_pop_sec2txt p {

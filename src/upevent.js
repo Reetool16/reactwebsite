@@ -23,6 +23,17 @@ function Upevent(props) {
                     </div>
 
                     <Swiper
+                         breakpoints={{
+                              1000: {
+                                   width: 768,
+                                   slidesPerView: 2,
+                              },
+                              768: {
+                                   width: 768,
+                                   slidesPerView: 2,
+                              }
+                         }
+                         }
 
                          effect='Cube'
                          // - Coverflow

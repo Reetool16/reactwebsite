@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Advertisment from './advertisment'
 import { FaBars } from 'react-icons/fa'
+import { GrFormClose } from 'react-icons/gr'
 export default function Navbar() {
     const [hambur, setHambur] = useState(false)
     // const [nav, setNav] = useState()
@@ -46,6 +47,16 @@ export default function Navbar() {
                     {/* responsive nav  */}
 
                     <div className={hambur ? "responsive_nav_list" : "responsive_navbar"} >
+                        <div className="txt_cntr">
+                            <span>
+                                <img src="./img/VCC-logo.svg" alt="" className='respon_navbar_logo' />
+                            </span>
+                            <span className='flt_rgt'>
+                                <a href="javascript:void(0)" className="ham_icon" onClick={show}>
+                                    <GrFormClose />
+                                </a>
+                            </span>
+                        </div>
                         <ul className=' justify_spc_btwn nav_list '>
                             <li className='down_nav_' ><a href="/" className='nav_link_list'>Home</a></li>
 
