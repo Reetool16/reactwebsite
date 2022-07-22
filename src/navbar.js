@@ -58,11 +58,11 @@ export default function Navbar() {
                             </span>
                         </div>
                         <ul className=' justify_spc_btwn nav_list '>
-                            <li className='down_nav_' ><a href="/" className='nav_link_list'>Home</a></li>
+                            <li className='down_nav_ down_hover_nav' ><a href="/" className='nav_link_list'>Home</a></li>
 
                             <li className='down_nav_' ><a href="/" className='nav_link_list'>Sign In</a> </li>
 
-                            <li className='down_nav_'><a href="/" className='nav_link_list'><img src="./img/crown.png" alt="" /> Subscribe</a></li>
+                            <li className='down_nav_'><a href="/" className='nav_link_list active_nav_list'><img src="./img/crown.png" alt="" /> Subscribe</a></li>
 
                             <li className='down_nav_' ><a href="/" className='down_nav_list'>Private Equity</a></li>
 

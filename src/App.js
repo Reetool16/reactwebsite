@@ -21,6 +21,7 @@ function App() {
   return (
     <div>
       <Navbar />
+
       <Manufacturing />
 
       <Editor head="Editor's pick" img="./img/editor.png" st={{ right: "57px" }} pre="PREMIUM" name="ECONOMY" txt="EMERGING MARKETS - Asian markets mixed as they digest Chinese data; South Korean stocks fall" date="30 September" customer="Madhurima Nandy"
@@ -36,6 +37,7 @@ function App() {
         style={{ backgroundColor: " #e3e3e3" }}
 
       />
+
       <Twitter />
 
 
@@ -89,6 +91,7 @@ function App() {
         ad="Advertisement" sudhir="./img/sudhir.png"
         style={{ display: "none" }}
       />
+
       <Advertisment img="./img/adv2.png" width="100%" />
 
       <div className='big_container'>

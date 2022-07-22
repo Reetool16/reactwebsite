@@ -718,7 +718,7 @@
 
      .fot_nav2 li {
           font-size: 2vw;
-          padding: 0px 5px;
+          padding: 5px 5px;
      }
 
 }
@@ -749,9 +749,29 @@
      .swiper-container {
           width: 768px;
      }
+
+     .vcctv_txt p {
+          text-align: justify;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+     }
+
+     .fot_nav2 {
+          justify-content: center;
+     }
+
+
+
 }
 
 @media only screen and (min-width:310px) and (max-width: 540px) {
+     .active_nav_list {
+          color: #F83900;
+     }
+
      .ed_pop_sec2txt span {
           /* display: block !important; */
           font-size: 8px;
@@ -776,6 +796,11 @@
           color: #222222;
           font-size: 12px;
           text-align: justify;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
      }
 
      .vcctv_txt span {
@@ -893,7 +918,7 @@
      }
 
      .input_field input {
-          width: 100%;
+          width: 250px;
           margin-bottom: 15px;
      }
 
