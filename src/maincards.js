@@ -40,58 +40,61 @@ function Maincards(props) {
                     {/* )
                          })}
                     </div> */}
-                    <Swiper
-                         breakpoints={{
-                              340: {
-                                   slidesPerView: 1,
-                                   spaceBetween: 20,
-                              },
-                              768: {
-                                   slidesPerView: 2,
-                                   spaceBetween: 20,
-                              },
-                              1024: {
-                                   slidesPerView: 4,
-                                   spaceBetween: 30,
-                              },
-                         }
-                         }
-                         // effect='fade'
-                         // effect='Cube'
-                         // - Coverflow
-                         // - Flip
-                         // - Cards
-                         // - Creative
-                         modules={[Navigation, Pagination, Scrollbar, A11y]}
-                         spaceBetween={10}
-                         slidesPerView={4}
-                         navigation
-                         pagination={{ clickable: true }}
-                         scrollbar={{ draggable: true }}
-                         onSwiper={(swiper) => console.log(swiper)}
-                         onSlideChange={() => console.log('slide change')}>
+                    <div className='maincard_col'>
+                         <Swiper
+                              breakpoints={{
+                                   340: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 20,
+                                   },
+                                   768: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 20,
+                                   },
+                                   1024: {
+                                        slidesPerView: 4,
+                                        spaceBetween: 10,
+                                   },
+                              }
+                              }
+                              // effect='fade'
+                              // effect='Cube'
+                              // - Coverflow
+                              // - Flip
+                              // - Cards
+                              // - Creative
+                              modules={[Navigation, Pagination, Scrollbar, A11y]}
+                              spaceBetween={10}
+                              slidesPerView={4}
+                              navigation
+                              pagination={{ clickable: true }}
+                              scrollbar={{ draggable: true }}
+                              onSwiper={(swiper) => console.log(swiper)}
+                              onSlideChange={() => console.log('slide change')}>
 
-                         <div className=''>
                               <div className=''>
-                                   {props.info.map((item) => {
-                                        return (
-                                             <SwiperSlide>
-                                                  <div className='slidr_eachcrd main_crds_box'>
-                                                       <div className='slidr_primum'>
-                                                            <img src={item.src} alt="" />
-                                                            <span>Premium</span>
+                                   <div className=''>
+                                        {props.info.map((item) => {
+                                             return (
+                                                  <SwiperSlide>
+                                                       <div className='slidr_eachcrd main_crds_box'>
+                                                            <div className='slidr_primum'>
+                                                                 <img src={item.src} alt="" />
+                                                                 <span>Premium</span>
+                                                            </div>
+
+                                                            <p className="slidr_text">{item.para}</p>
+                                                            <span className="slidr_author">{item.author}</span>
                                                        </div>
+                                                  </SwiperSlide>
+                                             )
+                                        })}
+                                   </div>
 
-                                                       <p className="slidr_text">{item.para}</p>
-                                                       <span className="slidr_author">{item.author}</span>
-                                                  </div>
-                                             </SwiperSlide>
-                                        )
-                                   })}
                               </div>
+                         </Swiper>
+                    </div>
 
-                         </div>
-                    </Swiper>
                </div>
           </div>
 

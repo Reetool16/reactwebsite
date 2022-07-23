@@ -20,60 +20,62 @@ function Vccpremium(props) {
                 </div>
 
 
-                <Swiper
-                    breakpoints={{
-                        340: {
-                            slidesPerView: 1,
-                            spaceBetween: 20,
-                        },
-                        768: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
-                        },
-                        1024: {
-                            slidesPerView: 4,
-                            spaceBetween: 50,
-                        },
-                    }}
-                    effect='Cube'
-                    // - Coverflow
-                    // - Flip
-                    // - Cards
-                    // - Creative
-                    modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
-                    spaceBetween={10}
-                    slidesPerView={4}
-                    navigation
-                    pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}>
+                <div className="kalupri">
 
-                    <div className='d-flex justify_spc_btwn  '>
-                        <div className=''>
-                            {props.info.map((item) => {
-                                return (
-                                    <SwiperSlide>
-                                        <div>
-                                            <div className='manfact_crd_img vccpmium_span' style={{ height: "145px" }}>
-                                                <img src={item.src} alt="" />
-                                                <span>PREMIUM</span>
+                    <Swiper
+                        breakpoints={{
+                            340: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 50,
+                            },
+                        }}
+                        effect='Cube'
+                        // - Coverflow
+                        // - Flip
+                        // - Cards
+                        // - Creative
+                        modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
+                        spaceBetween={10}
+                        slidesPerView={4}
+                        navigation
+                        pagination={{ clickable: true }}
+                        scrollbar={{ draggable: true }}
+                        onSwiper={(swiper) => console.log(swiper)}
+                        onSlideChange={() => console.log('slide change')}>
+
+                        <div className='d-flex justify_spc_btwn  '>
+                            <div className='vcckalupri'>
+                                {props.info.map((item) => {
+                                    return (
+                                        <SwiperSlide>
+                                            <div>
+                                                <div className='manfact_crd_img vccpmium_span' style={{ height: "145px" }}>
+                                                    <img src={item.src} alt="" />
+                                                    <span>PREMIUM</span>
+                                                </div>
+                                                <div className='vccpremium_img_txt'>
+                                                    <h5>{item.vchead}</h5>
+                                                    <p>{item.para}</p>
+                                                    <span>{item.author}</span>
+                                                </div>
                                             </div>
-                                            <div className='vccpremium_img_txt'>
-                                                <h5>{item.vchead}</h5>
-                                                <p>{item.para}</p>
-                                                <span>{item.author}</span>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                )
-                            })}
-                            {/*  */}
-                            {/* </div>  */}
+                                        </SwiperSlide>
+                                    )
+                                })}
+                                {/*  */}
+                                {/* </div>  */}
+                            </div>
                         </div>
-                    </div>
-                </Swiper>
-
+                    </Swiper>
+                </div>
                 <div className='subscribe_btn_respon'>
                     <button className='sub_btn'>SUBSCRIBE</button>
                 </div>

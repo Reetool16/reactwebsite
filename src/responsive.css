@@ -79,6 +79,24 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px) {
+     .maincard_col::before {
+          content: "";
+          position: absolute;
+          display: none;
+     }
+
+     .kalupri::before {
+          content: "";
+          position: absolute;
+          display: none;
+     }
+
+     .upevent_shdows::before {
+          content: "";
+          position: absolute;
+          display: none;
+     }
+
      .vcctv_txt h2 {
           font-size: 15px;
      }
@@ -724,6 +742,24 @@
 }
 
 @media only screen and (min-width:310px) and (max-width: 768px) {
+     .maincard_col::before {
+          content: "";
+          position: absolute;
+          display: none;
+     }
+
+     .upevent_shdows::before {
+          content: "";
+          position: absolute;
+          display: none;
+     }
+
+     .kalupri::before {
+          content: "";
+          position: absolute;
+          display: none;
+     }
+
      .mnfact_crd_info_respon {
           padding: 0px 5px;
      }

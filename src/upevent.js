@@ -22,58 +22,64 @@ function Upevent(props) {
                          </div>
                     </div>
 
-                    <Swiper
-                         breakpoints={{
-                              1000: {
-                                   width: 768,
-                                   slidesPerView: 2,
-                              },
-                              768: {
-                                   width: 768,
-                                   slidesPerView: 2,
+                    <div className='upevent_shdows'>
+
+                         <Swiper
+                              breakpoints={{
+                                   340: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 20,
+                                   },
+                                   768: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 20,
+                                   },
+                                   1024: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 10,
+                                   },
                               }
-                         }
-                         }
+                              }
 
-                         effect='Cube'
-                         // - Coverflow
-                         // - Flip
-                         // - Cards
-                         // - Creative
-                         modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
-                         spaceBetween={10}
-                         slidesPerView={3}
-                         navigation
-                         pagination={{ clickable: true }}
-                         scrollbar={{ draggable: true }}
-                         onSwiper={(swiper) => console.log(swiper)}
-                         onSlideChange={() => console.log('slide change')}>
-                         <div className="d-flex justify_spc_btwn flex_rap">
+                              effect='Cube'
+                              // - Coverflow
+                              // - Flip
+                              // - Cards
+                              // - Creative
+                              modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
+                              spaceBetween={10}
+                              slidesPerView={3}
+                              navigation
+                              pagination={{ clickable: true }}
+                              scrollbar={{ draggable: true }}
+                              onSwiper={(swiper) => console.log(swiper)}
+                              onSlideChange={() => console.log('slide change')}>
+                              <div className="d-flex justify_spc_btwn flex_rap">
 
-                              {props.info.map((item) => {
-                                   return (
-                                        <div>
-                                             <SwiperSlide>
-                                                  <div className='upcoimg_desk_'>
-                                                       <div className="d-flex justify_spc_btwn align_cntr evnts_blocks ">
-                                                            <div>
-                                                                 <img src={item.src} alt="limited" />
-                                                            </div>
-                                                            <div className="evnts_txt">
-                                                                 <h4>{item.heading}</h4>
-                                                                 <p>{item.txt}</p>
+                                   {props.info.map((item) => {
+                                        return (
+                                             <div>
+                                                  <SwiperSlide>
+                                                       <div className='upcoimg_desk_'>
+                                                            <div className="d-flex justify_spc_btwn align_cntr evnts_blocks ">
+                                                                 <div>
+                                                                      <img src={item.src} alt="limited" />
+                                                                 </div>
+                                                                 <div className="evnts_txt">
+                                                                      <h4>{item.heading}</h4>
+                                                                      <p>{item.txt}</p>
+                                                                 </div>
                                                             </div>
                                                        </div>
-                                                  </div>
-                                             </SwiperSlide>
-                                        </div>
-                                   )
-                              }
+                                                  </SwiperSlide>
+                                             </div>
+                                        )
+                                   }
 
-                              )}
+                                   )}
 
 
-                              {/* <div className="d-flex justify_spc_btwn align_cntr evnts_blocks">
+                                   {/* <div className="d-flex justify_spc_btwn align_cntr evnts_blocks">
                                    <div>
                                         <img src="./img/cloud.png" alt="cloud" />
                                    </div>
@@ -95,8 +101,9 @@ function Upevent(props) {
                                         </p>
                                    </div>
                               </div> */}
-                         </div>
-                    </Swiper>
+                              </div>
+                         </Swiper>
+                    </div>
                </div>
           </div>
 

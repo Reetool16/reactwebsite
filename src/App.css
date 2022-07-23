@@ -442,11 +442,32 @@
   width: 80%;
 }
 
+.maincard_col::before {
+  content: "";
+  position: absolute;
+  width: 298px;
+  right: 142px;
+  height: 241px;
+  z-index: 22;
+  border-radius: 14px;
+  background: transparent linear-gradient(to right, #ffffff00 0%, #FFFFFF 100%);
+}
+
 /* .swiper-slide {
   width: 320px !important;
 } */
 
 /*//////////////VCCPREMIUM\\\\\\\\\\\\\\  */
+.kalupri::before {
+  content: "";
+  background: linear-gradient(to left, #000000 -1%, rgba(255, 255, 255, 0) 85%);
+  position: absolute;
+  width: 363px;
+  right: 74px;
+  height: 301px;
+  z-index: 22;
+  border-radius: 14px;
+}
 
 .vccpremium {
   background-color: black;
@@ -469,7 +490,7 @@
 }
 
 .vccpmium_span span {
-  right: 21% !important;
+  right: 6% !important;
 
 }
 
@@ -495,12 +516,15 @@
   box-shadow: -2px 5px 10px #0000000D;
   border: 1px solid #0000001A;
   border-radius: 12px;
-  width: 305px;
+  /* width: ; */
+  justify-content: normal;
+
   margin-bottom: 15px;
 }
 
 .evnts_txt {
-  width: 175px;
+  /* width: 175px; */
+  padding-left: 5px;
 }
 
 .evnts_txt h4 {
@@ -511,6 +535,17 @@
 .evnts_txt p {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.upevent_shdows::before {
+  content: "";
+  position: absolute;
+  height: 111px;
+  z-index: 22;
+  border-radius: 14px;
+  width: 298px;
+  right: 142px;
+  background: transparent linear-gradient(to right, #ffffff00 0%, #ffffffe0 100%);
 }
 
 /* ///////////////////////INPUT BOX\\\\\\\\\\\\\\\\\\\\ */
