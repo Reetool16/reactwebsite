@@ -814,6 +814,7 @@
 
      .vcctv_bg {
           border: none;
+          padding: 0px 0px;
      }
 
      .vcctv_tv iframe {
@@ -966,8 +967,8 @@
      /* } */
 
      .responsive_big_container {
-          margin-left: 40px;
-          margin-right: 40px;
+          margin-left: 25px;
+          margin-right: 25px;
      }
 
      .manfact_crd {
