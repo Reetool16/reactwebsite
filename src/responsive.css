@@ -406,7 +406,11 @@
      }
 
      .evnts_txt p {
-          font-size: 1.2vw;
+          font-size: 13px;
+     }
+
+     .vccpremium_img_txt span {
+          font-size: 8px;
      }
 
      .ed_pop_sec2txt p {
@@ -454,7 +458,8 @@
      }
 
      .down_nav_ {
-          border-bottom: 1px solid #e3e3e330;
+          border-bottom: 1px solid #e3e3e3;
+          padding: 10px 10px;
      }
 
      .respon_nav_link_sub {
@@ -640,7 +645,7 @@
      }
 
      .main_crd_res_head p img {
-          height: 7px;
+          height: 5px;
      }
 
      .slidr_author {
@@ -742,6 +747,14 @@
 }
 
 @media only screen and (min-width:310px) and (max-width: 768px) {
+     .mergers_respons_display {
+          display: block !important;
+     }
+
+     .mergers_desk_display {
+          display: none !important;
+     }
+
      .maincard_col::before {
           content: "";
           position: absolute;
@@ -799,7 +812,23 @@
           justify-content: center;
      }
 
+     .vcctv_bg {
+          border: none;
+     }
 
+     .vcctv_tv iframe {
+          border-radius: 14px;
+          width: 100%;
+          height: 234px;
+     }
+
+     .input_BBox {
+          background-color: #000000;
+          /* height: 130px; */
+          padding: 15px 6px;
+          border-radius: 14px;
+          margin: 30px 0px;
+     }
 
 }
 
@@ -894,8 +923,8 @@
      }
 
      .big_container {
-          margin-left: 40px;
-          margin-right: 40px;
+          margin-left: 25px;
+          margin-right: 25px;
      }
 
      .respon_vccprem {

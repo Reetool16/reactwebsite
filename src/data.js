@@ -33,6 +33,11 @@ const Infopartner = [
           src: "./img/stock.png",
           para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
           author: "30 September . Madhurima Nandy "
+     },
+     {
+          src: "./img/stock.png",
+          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
+          author: "30 September . Madhurima Nandy "
      }
 ]
 
@@ -72,6 +77,10 @@ const founder = [
           src: "./img/cred.png",
           para: "Cred to buy expense management firm Happay; deal valued at $180 mn",
           author: "30 September . Madhurima Nandy +1"
+     }, {
+          src: "./img/stock.png",
+          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
+          author: "30 September . Madhurima Nandy "
      }
 ]
 
@@ -111,6 +120,11 @@ const tmt = [
           para: "nCORE Games bags $10 mn Series A co-led by Galaxy Interactive, Animoca Brands",
           author: "30 September . Madhurima Nandy +1"
      },
+     {
+          src: "./img/stock.png",
+          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
+          author: "30 September . Madhurima Nandy "
+     }
 ]
 
 const techcircle = [
@@ -148,6 +162,11 @@ const techcircle = [
           src: "./img/techkey.png",
           para: "Rooter raises $25 mn led by Lightbox, March Gaming, others",
           author: "30 September . Madhurima Nandy +1"
+     },
+     {
+          src: "./img/stock.png",
+          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
+          author: "30 September . Madhurima Nandy "
      }
 ]
 
@@ -187,6 +206,11 @@ const mergers = [
           para: "SaaS fintech startup Zaggle rejigs top management team with two new appointments",
           author: "30 September . Madhurima Nandy +1"
      },
+     {
+          src: "./img/stock.png",
+          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
+          author: "30 September . Madhurima Nandy "
+     }
 ]
 
 const financial = [
@@ -224,6 +248,11 @@ const financial = [
           src: "./img/financialsfrnd.png",
           para: "ADB returns as limited partner for Creador’s fifth Southeast Asia focused fund",
           author: "30 September . Madhurima Nandy +1"
+     },
+     {
+          src: "./img/stock.png",
+          para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
+          author: "30 September . Madhurima Nandy "
      }
 ]
 
@@ -270,6 +299,11 @@ const vccpremium = [
           para: "Iron Pillar-backed CoreStack’s game plan to hit $1 bn in annual recurring revenue",
           author: "30 September . Madhurima Nandy +1"
      },
+     // {
+     //      src: "./img/stock.png",
+     //      para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
+     //      author: "30 September . Madhurima Nandy "
+     // }
 
 ]
 
@@ -303,7 +337,17 @@ const upevents = [
           src: './img/limited.png',
           heading: 'FUTURE OF TRUST',
           txt: 'Hyatt Regency, New Delhi | New Hybrid Masterclass.'
-     }
+     },
+     {
+          src: './img/limited.png',
+          heading: 'FUTURE OF TRUST',
+          txt: 'Hyatt Regency, New Delhi | New Hybrid Masterclass.'
+     },
+     // {
+     //      src: "./img/stock.png",
+     //      para: "Fresh LP commitment to Indian PE-VC funds sinks after hitting record high LPs lps",
+     //      author: "30 September . Madhurima Nandy "
+     // }
 ]
 
 export { Infopartner, founder, tmt, techcircle, mergers, financial, vccpremium, upevents };

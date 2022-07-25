@@ -14,6 +14,10 @@ function Maincards(props) {
                          <div className='main_crd_res_head'>
                               <h2>
                                    {props.heading}
+                                   <span className="mergers_desk_display">{props.heading2}</span>
+                                   <span className="mergers_respons_display">
+                                        {props.heading3}
+                                   </span>
                               </h2>
                          </div>
                          <div className='main_crd_res_head'>
@@ -45,11 +49,11 @@ function Maincards(props) {
                               breakpoints={{
                                    340: {
                                         slidesPerView: 1,
-                                        spaceBetween: 20,
+                                        // spaceBetween: 20,
                                    },
                                    768: {
                                         slidesPerView: 2,
-                                        spaceBetween: 20,
+                                        // spaceBetween: 20,
                                    },
                                    1024: {
                                         slidesPerView: 4,

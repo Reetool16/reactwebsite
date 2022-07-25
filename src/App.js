@@ -130,7 +130,9 @@ function App() {
         </div>
       </div>
 
-      <Maincards heading="Mergers & Acquisitions" info={mergers} />
+      <Maincards heading2="Mergers & Acquisitions" info={mergers} className="mergers_desk_display" heading3="M&A" />
+
+      {/* <Maincards heading="M&A" info={mergers} className="mergers_respons_display" /> */}
 
       <Maincards heading="Financial" info={financial} />
 

@@ -12,7 +12,7 @@ export default function Navbar() {
             document.body.style.overflow = 'hidden'
         }
         else if (hambur === true) {
-            document.body.style.overflow = 'scroll'
+            document.body.style.overflowY = 'scroll'
         }
 
     }
