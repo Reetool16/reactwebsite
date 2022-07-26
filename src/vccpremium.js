@@ -47,7 +47,6 @@ function Vccpremium(props) {
                         slidesPerView={4}
                         navigation
                         pagination={{ clickable: true }}
-                        // aria-disabled={true}
                         scrollbar={{ draggable: true }}
                         onSwiper={(swiper) => console.log(swiper)}
                         onSlideChange={() => console.log('slide change')}>

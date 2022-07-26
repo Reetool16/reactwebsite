@@ -514,9 +514,10 @@
 
      .ham_icon {
           display: inline-block;
-          font-size: larger;
+          font-size: 25px;
           padding-right: 15px;
           color: black;
+          padding-top: 6px;
      }
 
      .manfact_crd p {
@@ -1000,6 +1001,14 @@
      }
 }
 
+
+@media only screen and (min-width:310px) and (max-width: 420px) {
+     .maincard_col {
+          width: 260px;
+          margin: 0 auto;
+     }
+
+}
 
 
 
