@@ -953,7 +953,7 @@
      }
 
      .manfact_crd p {
-          font-size: 2vw;
+          font-size: 2.5vw;
           width: 100%;
           margin: 0px;
      }
@@ -982,9 +982,9 @@
           display: none;
      }
 
-     .manfact_crd p {
+     /* .manfact_crd p {
           width: 100%;
-     }
+     } */
 
      .input_txt {
           text-align: center;

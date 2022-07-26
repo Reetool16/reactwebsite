@@ -466,7 +466,7 @@
 } */
 
 /*//////////////VCCPREMIUM\\\\\\\\\\\\\\  */
-/* .kalupri::before {
+.kalupri::before {
   content: "";
   background: linear-gradient(to left, #000000 -1%, rgba(255, 255, 255, 0) 85%);
   position: absolute;
@@ -475,7 +475,7 @@
   height: 301px;
   z-index: 22;
   border-radius: 14px;
-} */
+}
 
 .vccpremium {
   background-color: black;
