@@ -12,7 +12,7 @@ function Vcctv() {
                     </h2>
                 </div>
                 <div>
-                    <p className='vcc_tv_hed'>
+                    <p className='vcc_tv_hed vcc_head_res'>
                         View More <img src="./img/Iconright.svg" alt="" />
                     </p>
                 </div>

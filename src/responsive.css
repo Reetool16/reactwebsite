@@ -594,6 +594,10 @@
           border: none;
      }
 
+     .res_ed_pop h2 {
+          font-size: 3vw;
+     }
+
      .res_ed_pop_line {
           justify-content: normal;
      }
@@ -773,6 +777,20 @@
 }
 
 @media only screen and (min-width:310px) and (max-width: 768px) {
+     .vcc_tv_hed {
+          margin-top: 0px;
+          margin-bottom: 32px;
+          font-size: 3vw;
+     }
+
+     .vcc_head_res {
+          font-size: 2vw;
+     }
+
+     .vcc_head_res img {
+          height: 5px;
+     }
+
      .mergers_respons_display {
           display: block !important;
      }
