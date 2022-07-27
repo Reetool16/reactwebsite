@@ -3,9 +3,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/css';
 import 'swiper/scss/navigation';
+import { useRef } from 'react';
 // import { EffectFade } from 'swiper';
 function Maincards(props) {
+     const maincol = useRef();
 
+     // if (SwiperSlide === 8) {
+     //      maincol.current.style.Width = "260px"
+     // }
 
      return (
           <div>
@@ -44,7 +49,7 @@ function Maincards(props) {
                     {/* )
                          })}
                     </div> */}
-                    <div className='maincard_col'>
+                    <div className='maincard_col' ref={maincol}>
                          <Swiper
                               breakpoints={{
                                    340: {
@@ -70,6 +75,8 @@ function Maincards(props) {
                               modules={[Navigation, Pagination, Scrollbar, A11y]}
                               spaceBetween={10}
                               slidesPerView={4}
+                              autoplay={true}
+                              stopOnLastSlide={true}
                               navigation
                               pagination={{ clickable: true }}
                               scrollbar={{ draggable: true }}
