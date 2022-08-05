@@ -1,28 +1,35 @@
 import React from 'react'
 import Advertisment from './advertisment'
+// import axios from 'axios'
+import Onemaincard from './onemaincard'
 
-export default function Manufacturing() {
+export default function Manufacturing(props) {
+
+
     return (
         <>
-            <div className='big_container'>
+            <div className='big_container' key={props.item.stories_list.feid}>
                 <div className='d-flex manufact_banner justify_spc_btwn flex_drct_clum'>
                     <div className='manufact_info manufact_resinfo'>
                         <h5>
-                            Manufacturing
+                            {/* Manufacturing */}
+                            {props.item.stories_list[0].industry_details[0].name.toUpperCase()}
                         </h5>
                         <h1>
-                            Warburg Pincus set to acquire majority stake in auto parts maker
+                            {/* Warburg Pincus set to acquire majority stake in auto parts maker */}
+                            {props.item.stories_list[0].title}
                         </h1>
                         <p>
-                            Private equity firm TPG, which is reportedly heading towards a public listing, said on Thursday it had appointed long-time company executive Todd Sisitsky as president, effective immediately.
+                            {/* Private equity firm TPG, which is reportedly heading towards a public listing, said on Thursday it had appointed long-time company executive Todd Sisitsky as president, effective immediately. */}
+                            {props.item.stories_list[0].summary}
                         </p>
                         <span>30 September</span>
                         <span className='dot'></span>
-                        <span >Madhurima Nandy</span>
+                        <span >{props.item.stories_list[0].author_details[0].name}</span>
                         <p><button className='btn'>READ MORE</button></p>
                     </div>
                     <div className='manufact_respimg big_fact_respimg'>
-                        <img src="./img/Manufacturing.png" alt="" />
+                        <img src={props.item.stories_list[0].file_url} alt="" className='brdr_rdus manufacture_bigimg ' />
                     </div>
                 </div>
 
@@ -45,61 +52,100 @@ export default function Manufacturing() {
                 {/* sudhir respons ad end */}
 
                 <div className='d-flex justify_spc_btwn manufact-sm-card flex_rap'>
-                    <div className='manfact_crd responsive_manfact_crd'>
+                    {props.item.stories_list.map((item, index) => {
+                        if (index === 0) return null;
+                        return (
+                            <Onemaincard
+                                Mcls="manfact_crd"
+                                edcls="responsive_manfact_crd"
+                                crd_img="manfact_crd_img manufact_respimg"
+                                src={item.file_url}
+                                imgcls='brdr_rdus'
+                                width="100%"
+                                cntncls="mnfact_crd_info_respon"
+                                heading={item.industry_details[0].name}
+                                title={item.title}
+                                publish={item.publish}
+                                author={item.author_details[0].name}
+                            />
+                        )
+                    })}
+                    {/* <div className='manfact_crd responsive_manfact_crd'>
                         <div className='manfact_crd_img manufact_respimg'>
-                            <img src="./img/economy.png" alt="" />
+                            
+                            <img src={props.item.stories_list[1].file_url} alt="" width="100%" className='brdr_rdus' />
+                           
+                        </div>
+                        <div className='mnfact_crd_info_respon'>
+                            <h5>{props.item.stories_list[1].industry_details[0].name}</h5>
+                            <p>
+                               
+                                {props.item.stories_list[1].title}
+                            </p>
+                            <span>30 September</span>
+                            <span className='dot'></span>
+                            <span >{props.item.stories_list[1].author_details[0].name}</span>
+                        </div>
+                    </div> */}
+
+
+                    {/* <div className='manfact_crd responsive_manfact_crd'>
+                        <div className='manfact_crd_img manufact_respimg'>
+                            
+                            <img src={props.item.stories_list[2].file_url} alt="" width="100%" className='brdr_rdus' />
                             <span className='respons_premium'>PREMIUM</span>
                         </div>
                         <div className='mnfact_crd_info_respon'>
-                            <h5>ECONOMY</h5>
-                            <p>Indian shares snap 5-day rally on weak global cues, post weekly gain</p>
+                            <h5>
+                                
+                                {props.item.stories_list[2].industry_details[0].name}
+                            </h5>
+                            <p>
+                                
+                                {props.item.stories_list[2].title}
+                            </p>
                             <span>30 September</span>
                             <span className='dot'></span>
-                            <span >Madhurima Nandy +1</span>
+                            <span >{props.item.stories_list[2].author_details[0].name}</span>
                         </div>
-                    </div>
+                    </div> */}
 
-
-                    <div className='manfact_crd responsive_manfact_crd'>
-                        <div className='manfact_crd_img manufact_respimg'>
-                            <img src="./img/finance.png" alt="" />
-                            <span className='respons_premium'>PREMIUM</span>
-                        </div>
-                        <div className='mnfact_crd_info_respon'>
-                            <h5>FINANCE</h5>
-                            <p>Paytm to shut Canada B2C app amid eroding market capitalisation</p>
-                            <span>30 September</span>
-                            <span className='dot'></span>
-                            <span >Madhurima Nandy</span>
-                        </div>
-                    </div>
-
-                    <div className='manfact_crd manufact_respimg responsive_manfact_crd '>
+                    {/* <div className='manfact_crd manufact_respimg responsive_manfact_crd '>
                         <div>
-                            <img src="./img/consumer.png" alt="" />
+                            
+                            <img src={props.item.stories_list[3].file_url} alt="" width="100%" className='brdr_rdus' />
                         </div>
                         <div className='mnfact_crd_info_respon'>
-                            <h5>CONSUMER</h5>
-                            <p>Exclusive: PE-backed sauce maker Wingreens acquires Lok Capital-backed cereal maker</p>
+                            <h5>
+                                {props.item.stories_list[2].industry_details[0].name}
+                            </h5>
+                            <p>
+                               
+                                {props.item.stories_list[3].title}
+                            </p>
                             <span>30 September</span>
                             <span className='dot'></span>
-                            <span >Madhurima Nandy +3</span>
+                            <span >{props.item.stories_list[3].author_details[0].name}</span>
 
                         </div>
-                    </div>
-                    <div className='manfact_crd responsive_manfact_crd'>
+                    </div> */}
+                    {/* <div className='manfact_crd responsive_manfact_crd'>
                         <div className='manfact_crd_img manufact_respimg '>
-                            <img src="./img/economyblock.png" alt="" />
-                            <span className='respons_premium'>PREMIUM</span>
+                         
+                            <img src={props.item.stories_list[4].file_url} alt="" width="100%" className='brdr_rdus' />
+                            
                         </div>
                         <div className='mnfact_crd_info_respon'>
-                            <h5>ECONOMY</h5>
-                            <p>GLOBAL MARKETS-European shares in the red after hawkish Fed comments</p>
+                            <h5>
+                                
+                                {props.item.stories_list[4].industry_details[0].name}
+                            </h5>
+                            <p>{props.item.stories_list[4].title}</p>
                             <span>30 September</span>
                             <span className='dot'></span>
-                            <span >Madhurima Nandy</span>
+                            <span >{props.item.stories_list[4].author_details[0].name}</span>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <Advertisment img="./img/adv2.png" width="100%" />

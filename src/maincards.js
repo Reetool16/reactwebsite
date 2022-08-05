@@ -5,6 +5,8 @@ import 'swiper/css';
 import 'swiper/scss/navigation';
 import { useRef } from 'react';
 // import { EffectFade } from 'swiper';
+import Onemaincard from './onemaincard';
+import Premium from './premium';
 function Maincards(props) {
      const maincol = useRef();
 
@@ -14,11 +16,11 @@ function Maincards(props) {
 
      return (
           <div>
-               <div className='big_container responsive_big_container more_crd'>
+               <div className='big_container responsive_big_container more_crd' key={props.item.stories_list[0].feid}>
                     <div className='d-flex justify_spc_btwn align_cntr'>
                          <div className='main_crd_res_head'>
                               <h2>
-                                   {props.heading}
+                                   {props.item.section_name}
                                    <span className="mergers_desk_display">{props.heading2}</span>
                                    <span className="mergers_respons_display">
                                         {props.heading3}
@@ -33,28 +35,13 @@ function Maincards(props) {
                     </div>
 
 
-                    {/* <div className='d-flex justify_spc_btwn manufact-sm-card flex_rap'>
-                         {props.info.map((item) => {
-                              return (
-                                   <div className='manfact_crd main_crds_box respon_crds_box'>
-                                        <div className='manfact_crd_img'>
-                                             <img src={item.src} alt="" width="100%" /> */}
-                    {/* <span>PREMIUM</span> */}
-                    {/* </div> */}
-                    {/* <h5>{item.heading}</h5> */}
-                    {/* <p>{item.para}</p>
-                                        <span>{item.author}</span> */}
-                    {/* <span>{item.customer}</span> */}
-                    {/* </div> */}
-                    {/* )
-                         })}
-                    </div> */}
+
                     <div className='maincard_col' ref={maincol}>
                          <Swiper
                               breakpoints={{
                                    340: {
-                                        slidesPerView: 1,
-                                        // spaceBetween: 20,
+                                        slidesPerView: 2,
+                                        spaceBetween: 20,
                                    },
                                    768: {
                                         slidesPerView: 2,
@@ -85,29 +72,82 @@ function Maincards(props) {
 
                               <div className=''>
                                    <div className=''>
-                                        {props.info.map((item) => {
+
+
+
+                                        {props.item.stories_list.map((item, index) => {
+                                             {/* if (index === 0) return null */ }
                                              return (
                                                   <SwiperSlide>
-                                                       <div className='slidr_eachcrd main_crds_box'>
-                                                            <div className='slidr_primum'>
-                                                                 <img src={item.src} alt="" />
-                                                                 <span>Premium</span>
-                                                            </div>
+                                                       <div className='rltiv'>
+                                                            {item.premium === "1" ? <Premium premium="premium_tag premium_tag_up" /> : null}
+                                                            <Onemaincard
 
-                                                            <p className="slidr_text">{item.para}</p>
-                                                            <span className="slidr_author">{item.author}</span>
+                                                                 edcls="slidr_eachcrd main_crds_box"
+                                                                 crd_img="slidr_primum"
+                                                                 src={item.file_url}
+                                                                 imgcls='brdr_rdus'
+                                                                 width="100%"
+                                                                 cntncls=""
+                                                                 para="slidr_text"
+                                                                 authdet="slidr_author"
+                                                                 // heading={item.industry_details[0].name}
+                                                                 title={item.title}
+                                                                 publish={item.publish}
+                                                                 author={item.author_details[0].name}
+                                                            />
+
                                                        </div>
                                                   </SwiperSlide>
+
                                              )
                                         })}
+                                        {/* <div className='slidr_eachcrd main_crds_box'>
+                                                  <div className='slidr_primum'>
+                                                       <img src={props.item.stories_list[0].file_url} alt="" />
+                                                       <span>Premium</span>
+                                                  </div>
+
+                                                  <p className="slidr_text">{props.item.stories_list[0].title}</p>
+                                                  <span className="slidr_author">{props.item.stories_list[0].author_details[0].name}</span>
+                                             </div> */}
+                                        {/* <div className='slidr_eachcrd main_crds_box'>
+                                                  <div className='slidr_primum'>
+                                                       <img src={props.item.stories_list[0].file_url} alt="" />
+                                                       <span>Premium</span>
+                                                  </div>
+
+                                                  <p className="slidr_text">{props.item.stories_list[0].title}</p>
+                                                  <span className="slidr_author">{props.item.stories_list[0].author_details[0].name}</span>
+                                             </div> */}
+                                        {/* <div className='slidr_eachcrd main_crds_box'>
+                                                  <div className='slidr_primum'>
+                                                       <img src={props.item.stories_list[0].file_url} alt="" />
+                                                       <span>Premium</span>
+                                                  </div>
+
+                                                  <p className="slidr_text">{props.item.stories_list[0].title}</p>
+                                                  <span className="slidr_author">{props.item.stories_list[0].author_details[0].name}</span>
+                                             </div> */}
+                                        {/* <div className='slidr_eachcrd main_crds_box'>
+                                                  <div className='slidr_primum'>
+                                                       <img src={props.item.stories_list[0].file_url} alt="" />
+                                                       <span>Premium</span>
+                                                  </div>
+
+                                                  <p className="slidr_text">{props.item.stories_list[0].title}</p>
+                                                  <span className="slidr_author">{props.item.stories_list[0].author_details[0].name}</span>
+                                             </div> */}
+
+
                                    </div>
 
                               </div>
                          </Swiper>
                     </div>
 
-               </div>
-          </div>
+               </div >
+          </div >
 
      )
 }

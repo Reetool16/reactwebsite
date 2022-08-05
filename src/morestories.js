@@ -1,15 +1,65 @@
 import React from 'react'
 import Advertisment from './advertisment'
-
-
-export default function Morestories() {
+import Onemaincard from './onemaincard'
+import Maincards from './maincards'
+export default function Morestories(props) {
     return (
         <>
-            <div className='big_container'>
-                <h2>More Stories</h2>
-                <div className='d-flex justify_spc_btwn responsive_stories '>
-                    <div>
-                        <div className='d-flex stes_crd imageswidth'>
+            <div className='big_container' key={props.item.stories_list[0].feid}>
+                <h2>
+                    {props.item.section_name}
+
+                    {/* More Stories */}
+                </h2>
+                <div className='justify_spc_btwn responsive_stories '>
+                    <div className='stes_flx'>
+                        {props.item.stories_list.map((item, index) => {
+                            {/* if (index === 0) return null */ }
+                            return (
+
+                                <Onemaincard
+                                    Mcls=""
+                                    edcls="d-flex stes_crd"
+                                    crd_img="manfact_crd_img imageswidth"
+                                    src={item.file_url}
+                                    imgcls='brdr_rdus'
+                                    width="100%"
+                                    cntncls="stes_crd_info"
+                                    para=""
+                                    authdet=""
+                                    heading={item.industry_details[0].name}
+                                    title={item.title}
+                                    publish={item.publish}
+                                    author={item.author_details[0].name}
+                                />
+
+
+                            )
+                        })}
+                        {/* {props.item.stories_list.map((item, index) => {
+                           
+                            return (
+
+                                <Onemaincard
+
+                                    edcls="d-flex stes_crd"
+                                    crd_img="manfact_crd_img imageswidth"
+                                    src={item.file_url}
+                                    imgcls='brdr_rdus'
+                                    width="100%"
+                                    cntncls="stes_crd_info"
+                                    para="slidr_text"
+                                    authdet="slidr_author"
+
+                                    title={item.title}
+                                    publish={item.publish}
+                                    author={item.author_details[0].name}
+                                />
+
+
+                            )
+                        })} */}
+                        {/* <div className='d-flex stes_crd imageswidth'>
                             <img src="./img/stesfinance.png" alt="" />
                             <div className='stes_crd_info'>
                                 <h5>FINANCE</h5>
@@ -45,12 +95,12 @@ export default function Morestories() {
                                 <span>Madhurima Nandy</span>
                             </div>
                         </div>
-
+ */}
 
                     </div>
 
                     <div>
-                        <div className='d-flex stes_crd'>
+                        {/* <div className='d-flex stes_crd'>
                             <div className='manfact_crd_img imageswidth'>
                                 <img src="./img/stesecomy.png" alt="" />
                                 <span>PREMIUM</span>
@@ -99,14 +149,19 @@ export default function Morestories() {
                                     <span>Madhurima Nandy</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
 
-            <Advertisment img="./img/adv2.png" width="100%" />
+            {/* <Advertisment img="./img/adv2.png" width="100%" /> */}
 
-            <div className='big_container'>
+
+
+
+            {/* ///////////////////////////////SECOND PART\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */}
+
+            {/* <div className='big_container'>
                 <div className='d-flex stes_crd2 justify_spc_btwn'>
                     <div>
                         <div className='d-flex stes_crd'>
@@ -187,57 +242,13 @@ export default function Morestories() {
                         </div>
                     </div>
                 </div>
+                 </div> */}
 
 
-            </div>
-
-            {/* ////////////////Footer\\\\\\\\\\\\\\\\ */}
 
 
-            <div className='footer'>
-                <div className='big_container'>
-                    <div className='footer_head'>
-                        <h2><span>MOSAIC</span> DIGITAL</h2>
-                        <p>
-                            <span>NEWS</span>
-                            <span>INSIGHT</span>
-                            <span style={{ border: "none" }}>EVENT</span>
-                        </p>
-                        <p>
-                            <img src="./img/facebook.png" alt="" />
-                            <img src="./img/twit.png" alt="" />
-                            <img src="./img/linkedin.png" alt="" />
-                        </p>
-                    </div>
 
-                    <div className='big'>
-                        <ul className='d-flex nav_list justify_spc_ard flex_rap fot_nav'>
-                            <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> About us</a></li>
-                            <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Advertise with us</a></li>
-                            <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Contact us</a></li>
-                            <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Copyright</a></li>
-                            <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}>Privacy Policy </a></li>
-                            <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Terms of use</a></li>
-                            <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}>Company Listing</a></li>
-                            <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}>Tag Listing</a></li>
-                        </ul>
-                        <ul className='d-flex nav_list justify_spc_evely flex_rap fot_nav2'>
-                            <li>Our Product :</li>
-                            <li>VCCircle</li>
-                            <li>TechCircle</li>
-                            <li>Events</li>
-                            <li>Training</li>
-                            <li>VCCEdge</li>
-                            <li>SalesEdge</li>
-                            <li>PartnerEdge</li>
-                            <li>Edge Insights</li>
-                        </ul>
-                    </div>
-                    <p style={{ textAlign: 'center', marginTop: '55px', marginBottom: "0px", color: "#FFFFFF" }}>
-                        Copyright © 2022 VCCircle.com. Property of Mosaic Media Venture Pvt.Ltd
-                    </p>
-                </div>
-            </div>
+
         </>
     )
 }

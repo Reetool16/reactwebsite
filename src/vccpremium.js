@@ -3,15 +3,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from 'swiper';
 import 'swiper/css';
 import 'swiper/scss/navigation';
-
+import Onemaincard from './onemaincard';
+import Premium from './premium';
 function Vccpremium(props) {
     return (<>
-        <div className='vccpremium'>
+        <div className='vccpremium' key={props.item.stories_list.feid}>
             <div className='big_container'>
                 <div className='d-flex justify_spc_btwn align_cntr'>
                     <div className='vccprim_had'>
                         <h2>
-                            VCCircle Premium <img src="./img/crown.png" alt="" />
+                            {props.item.section_name}<img src="./img/crown.png" alt="" />
                         </h2>
                     </div>
                     <div className='subscribe_btn_desk'>
@@ -53,10 +54,29 @@ function Vccpremium(props) {
 
                         <div className='d-flex justify_spc_btwn  '>
                             <div className='vcckalupri'>
-                                {props.info.map((item) => {
+                                {props.item.stories_list.map((item, index) => {
+                                    {/* if (index === 0) return null; */ }
                                     return (
                                         <SwiperSlide>
-                                            <div>
+                                            <div className='rltiv'>
+                                                {item.premium === "1" ? <Premium premium="premium_tag prmum_tag_vcc" /> : null}
+                                                <Onemaincard
+
+                                                    // edcls="slidr_eachcrd main_crds_box"
+                                                    crd_img="manfact_crd_img vccpmium_span vccpri_img"
+                                                    src={item.file_url}
+                                                    imgcls='brdr_rdus'
+                                                    width="100%"
+                                                    cntncls="vccpremium_img_txt"
+                                                    // para="slidr_text"
+                                                    // authdet="slidr_author"
+                                                    heading={item.industry_details[0].name}
+                                                    title={item.title}
+                                                    publish={item.publish}
+                                                    author={item.author_details[0].name}
+                                                />
+                                            </div>
+                                            {/* <div>
                                                 <div className='manfact_crd_img vccpmium_span' style={{ height: "145px" }}>
                                                     <img src={item.src} alt="" />
                                                     <span>PREMIUM</span>
@@ -66,7 +86,7 @@ function Vccpremium(props) {
                                                     <p>{item.para}</p>
                                                     <span>{item.author}</span>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </SwiperSlide>
                                     )
                                 })}

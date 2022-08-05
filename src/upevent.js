@@ -4,6 +4,7 @@ import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from 'swiper';
 import 'swiper/css';
 import 'swiper/scss/navigation';
 
+
 function Upevent(props) {
      return (
 

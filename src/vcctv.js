@@ -1,14 +1,14 @@
 import React from 'react'
 
 
-function Vcctv() {
+function Vcctv(props) {
 
     return (
-        <div className='big_container vcctv_bg'>
+        <div className='big_container vcctv_bg' key={props.item.stories_list[0].feid}>
             <div className='d-flex justify_spc_btwn align_cntr'>
                 <div>
                     <h2 className='vcc_tv_hed'>
-                        VCC TV
+                        {props.item.section_name}
                     </h2>
                 </div>
                 <div>
@@ -24,16 +24,17 @@ function Vcctv() {
                 </div>
                 <div className="vcctv_txt">
                     <h5>
-                        HEALTHCARE
+                        {/* {props.item.stories_list} */}
+                        {props.item.stories_list[0].industry_details[0].name}
                     </h5>
                     <h2>
-                        How can we harness data for healthcare and safegaurd ourselves from cyber threats?
+                        {props.item.stories_list[0].title}
                     </h2>
                     <p>
-                        The global healthcare data is expected to grow at a CAGR of 36% by 2025. To make healthcare more equitable, affordable and accessible, there is a need to find ways to unite and generate actionable insights from data. How collaborations and strategic partnerships can harness the data to tackle the issues faced by the sector?
+                        {props.item.stories_list[0].summary}
                     </p>
-                    <span>30 September </span>
-                    <span>Madhurima Nandy</span>
+                    <span>{props.item.stories_list[0].publish}</span>
+                    <span>{props.item.stories_list[0].author_details[0].name}</span>
                 </div>
             </div>
 
