@@ -1,7 +1,6 @@
 import React from 'react'
-import Advertisment from './advertisment'
+// import Advertisment from './advertisment'
 import Onemaincard from './onemaincard'
-import Maincards from './maincards'
 export default function Morestories(props) {
     return (
         <>
@@ -14,7 +13,7 @@ export default function Morestories(props) {
                 <div className='justify_spc_btwn responsive_stories '>
                     <div className='stes_flx'>
                         {props.item.stories_list.map((item, index) => {
-                            {/* if (index === 0) return null */ }
+
                             return (
 
                                 <Onemaincard
@@ -22,13 +21,18 @@ export default function Morestories(props) {
                                     edcls="d-flex stes_crd"
                                     crd_img="manfact_crd_img imageswidth"
                                     src={item.file_url}
+                                    premium={item.premium}
                                     imgcls='brdr_rdus'
+                                    imgslug={item.slug}
                                     width="100%"
+                                    height="156px"
                                     cntncls="stes_crd_info"
                                     para=""
                                     authdet=""
                                     heading={item.industry_details[0].name}
+                                    headingslug={item.industry_details[0].name}
                                     title={item.title}
+                                    titleslug={item.slug}
                                     publish={item.publish}
                                     author={item.author_details[0].name}
                                 />

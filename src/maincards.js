@@ -6,7 +6,7 @@ import 'swiper/scss/navigation';
 import { useRef } from 'react';
 // import { EffectFade } from 'swiper';
 import Onemaincard from './onemaincard';
-import Premium from './premium';
+// import Premium from './premium';
 function Maincards(props) {
      const maincol = useRef();
 
@@ -76,16 +76,17 @@ function Maincards(props) {
 
 
                                         {props.item.stories_list.map((item, index) => {
-                                             {/* if (index === 0) return null */ }
+
                                              return (
                                                   <SwiperSlide>
                                                        <div className='rltiv'>
-                                                            {item.premium === "1" ? <Premium premium="premium_tag premium_tag_up" /> : null}
                                                             <Onemaincard
 
                                                                  edcls="slidr_eachcrd main_crds_box"
                                                                  crd_img="slidr_primum"
                                                                  src={item.file_url}
+                                                                 premium={item.premium}
+                                                                 imgslug={item.slug}
                                                                  imgcls='brdr_rdus'
                                                                  width="100%"
                                                                  cntncls=""

@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .rltiv {
   position: relative;
 }
@@ -12,9 +17,10 @@
   color: white !important;
   background: transparent linear-gradient(90deg, #FE8C00 0%, #F83600 100%);
   padding: 3px 3px;
-  font-size: 10px !important;
+  font-size: 9px;
   font-weight: 600;
   z-index: 1;
+  text-transform: uppercase;
 }
 
 .premium_tag_up {
@@ -23,15 +29,21 @@
 }
 
 .prmum_tag_vcc {
-  top: 43%;
-  right: 17px;
+  bottom: 8px;
+  right: 12px;
 }
 
 .prm_tag_chn {
   left: 58px;
   padding: 1px 1px;
-  top: 57%;
+  top: 85px;
   /* right: 0%; */
+}
+
+.prm_tag_manfct {
+  padding: 1px 1px;
+  top: 134px;
+  right: 39px;
 }
 
 .stes_7_crd {
@@ -47,11 +59,19 @@
 }
 
 .sub_btn {
-  padding: 12px 50px;
+  width: 150px;
+  height: 35px;
+  background-color: #096FFA;
+  /* margin-top: 24px; */
+  border: 1px solid rgb(17, 17, 40);
+  border-style: none;
   border-radius: 28px;
-  background: blue;
-  color: white;
-  border: none;
+  font-size: 12px;
+  letter-spacing: 0.024px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
 }
 
 .subscribe_btn_respon {
@@ -227,11 +247,18 @@
   background-color: #798692;
 } */
 .btn {
-  padding: 12px 50px;
-  border-radius: 28px;
-  background: blue;
-  color: white;
-  border: none;
+  width: 164px;
+  height: 34px;
+  background-color: #096FFA;
+  margin-top: 24px;
+  border: 1px solid rgb(17, 17, 40);
+  border-style: none;
+  border-radius: 20px;
+  font-size: 12px;
+  letter-spacing: 0.024px;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
 }
 
 .manufact-sm-card {
@@ -240,6 +267,10 @@
 
 .manfact_crd {
   width: 24%;
+}
+
+.manfact_crd_box {
+  width: 90%;
 }
 
 .manfact_crd_img {
@@ -258,18 +289,18 @@
 
 } */
 
-.manfact_crd h5 {
+.mnfact_crd_info_respon h5 {
   color: #096FFA;
   margin-top: 5px;
   margin-bottom: 8px;
 }
 
-.manfact_crd p {
+.mnfact_crd_info_respon p {
   font-size: 15px;
   width: 88%;
 }
 
-.manfact_crd span {
+.mnfact_crd_info_respon span {
   color: #798692;
   padding: 5px 2px;
   font-size: 12px;
@@ -287,6 +318,11 @@
 .ed_pop_img {
   width: 372px;
 }
+
+.edtor_pop_img_sec2 {
+  position: relative;
+}
+
 
 .ed_pop_img img {
   width: 100%;
@@ -555,10 +591,10 @@
   border-bottom-right-radius: 14px;
 }
 
-.vccpmium_span span {
+/* .vccpmium_span span {
   right: 6% !important;
 
-}
+} */
 
 .vccpremium_img_txt h5 {
   color: #096FFA;
@@ -652,10 +688,16 @@
 .input_btn button {
   width: 150px;
   height: 50px;
-  border-radius: 30px;
   background-color: #096FFA;
-  color: #ffffff;
-  font-weight: 500;
+  /* margin-top: 24px; */
+  border: 1px solid rgb(17, 17, 40);
+  border-style: none;
+  border-radius: 40px;
+  font-size: 12px;
+  letter-spacing: 0.024px;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* //////////////////// Stories card \\\\\\\\\\\\\\\\\ */

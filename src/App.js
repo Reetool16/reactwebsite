@@ -11,7 +11,8 @@ import Twitter from './twitter';
 import Vccpremium from './vccpremium';
 import Upevent from './upevent';
 import Maincards from './maincards';
-import { Infopartner, founder, tmt, techcircle, mergers, financial, vccpremium, upevents } from './data.js';
+// import { Infopartner, founder, tmt, techcircle, mergers, financial, vccpremium, upevents } from './data.js';
+import { upevents } from './data.js';
 import Vcctv from './vcctv';
 import Input from './input';
 import Morestories from './morestories';
@@ -109,7 +110,7 @@ function App() {
           <Footer />
         </>)
       }
-
+      return null;
     })}
 
 

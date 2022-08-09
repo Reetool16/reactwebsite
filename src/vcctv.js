@@ -1,6 +1,5 @@
 import React from 'react'
-
-
+import moment from 'moment'
 function Vcctv(props) {
 
     return (
@@ -33,7 +32,7 @@ function Vcctv(props) {
                     <p>
                         {props.item.stories_list[0].summary}
                     </p>
-                    <span>{props.item.stories_list[0].publish}</span>
+                    <span>{moment(props.publish).format("Do MMM YYYY ")}</span>
                     <span>{props.item.stories_list[0].author_details[0].name}</span>
                 </div>
             </div>
