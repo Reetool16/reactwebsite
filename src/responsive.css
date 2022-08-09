@@ -911,7 +911,7 @@
 
      .ed_pop_sec2txt span {
           /* display: block !important; */
-          font-size: 8px;
+          font-size: 6px;
      }
 
      .vccpmium_span span {
@@ -988,7 +988,7 @@
      .ed_pop_sec2txt p {
           margin-top: 0px;
           margin-bottom: 5px;
-          font-size: 2.5vw;
+          font-size: 2.1vw;
           /* width: 278px; */
           width: 100%;
      }
