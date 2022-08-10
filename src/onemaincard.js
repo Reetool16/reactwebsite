@@ -27,6 +27,8 @@ function Onemaincard(props) {
                          <span className={props.authdet}>{moment(props.publish).format("Do MMM YYYY ")}</span>
                          <span className='dot'></span>
                          <span className={props.authdet}>{props.author}</span>
+                         <span className={props.plusone}> {props.one} </span>
+                         <span className={props.nameshow}>{props.incrval}</span>
                     </div>
                </div>
           </div>

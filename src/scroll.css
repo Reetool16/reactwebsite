@@ -36,11 +36,14 @@
      -webkit-box-orient: vertical;
      overflow: hidden;
      text-overflow: ellipsis;
+     margin-bottom: 23px;
 }
 
 .slidr_author {
-     font-size: 12px;
+     font-size: 10px;
      color: #939393;
+     font-weight: 600;
+     padding: 0px 4px;
 }
 
 .swiper-button-next:after {
