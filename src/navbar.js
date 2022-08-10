@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Advertisment from './advertisment'
+// import Advertisment from './advertisment'
 import { FaBars } from 'react-icons/fa'
 import { GrFormClose } from 'react-icons/gr'
 export default function Navbar() {
@@ -116,7 +116,7 @@ export default function Navbar() {
                 </div>
             </div>
         </div>
-        <Advertisment img="./img/walk in kholer.png" width="100%" />
+
     </>
     )
 }
