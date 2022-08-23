@@ -2,6 +2,33 @@
   text-align: center;
 }
 
+.skeleton_smhead {
+  color: transparent !important;
+  /* background-color: hsl(0, 0%, 94%) !important; */
+  /* padding: 6px 8px !important; */
+  /* margin-bottom: 20px !important; */
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(0, 0%, 94%);
+  }
+
+  100% {
+    background-color: hsla(0, 0%, 88%, 0.837);
+  }
+}
+
+.skele_img {
+  visibility: hidden;
+}
+
+.skelead {
+
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -14,7 +41,7 @@ a {
   width: 40px;
   height: 40px;
   -webkit-animation: spin 10s linear infinite;
-  animation: spin 10s linear infinite;
+  animation: spin 2.5s linear infinite;
   margin: 50px 0px 0px 50px;
   text-align: center;
   margin: 15px auto;
@@ -343,6 +370,11 @@ a {
 .mnfact_crd_info_respon p {
   font-size: 15px;
   width: 88%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .mnfact_crd_info_respon span {

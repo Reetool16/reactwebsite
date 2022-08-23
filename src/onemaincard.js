@@ -10,7 +10,8 @@ function Onemaincard(props) {
                <div className={props.edcls}>
                     <div className={props.crd_img}>
                          <Link to={props?.imgslug || " "}>
-                              <img src={props.src} alt=" " className={props.imgcls} width={props.width} height={props.height} />
+
+                              {props.src ? (<img src={props.src} alt=" " className={props.imgcls} width={props.width} height={props.height} />) : <img src="./img/noimg.webp" alt=" " className={props.imgcls} width={props.width} height={props.height} />}
                               {props.premium === "1" ? <Premium premium="premium_tag prmum_tag_vcc" /> : null}
                          </Link>
                          {/* {props.premium === "1" ? <Premium premium="premium_tag prmum_tag_vcc" /> : null} */}

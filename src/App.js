@@ -22,7 +22,7 @@ import Loader from './loader';
 // import Premium from './premium';
 // import CardSlider from './cardslider';
 // import Manufacturingtwo from './manufacturingtwo';
-
+import Skeleton from './skeleton';
 import Advertisment from './advertisment'
 
 
@@ -43,8 +43,10 @@ function App() {
 
   return (<>
     <Navbar />
-    {loader === false ? <Loader /> :
+    {/* <Skeleton /> */}
+    {loader === false ? <Skeleton /> :
       <>
+
         <Advertisment img="./img/walk in kholer.png" width="100%" />
         {
           info.map((item, index) => {
