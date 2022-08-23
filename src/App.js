@@ -18,7 +18,7 @@ import Input from './input';
 import Morestories from './morestories';
 import Upeventrespon from './upeventrespon';
 import Footer from './footer';
-import Loader from './loader';
+// import Loader from './loader';
 // import Premium from './premium';
 // import CardSlider from './cardslider';
 // import Manufacturingtwo from './manufacturingtwo';

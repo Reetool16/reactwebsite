@@ -9,7 +9,7 @@ function Upevent(props) {
      return (
 
           <div className='big_container'>
-               <div>
+               <div className='upevenet_respon_top'>
                     <div className='d-flex justify_spc_btwn align_cntr'>
                          <div className='Upevent_heading'>
                               <h2>

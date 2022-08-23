@@ -414,6 +414,7 @@
 
      .upcoimg_events_respons {
           display: block !important;
+          margin-bottom: 25px;
      }
 
      .evnts_blocks {
@@ -903,6 +904,28 @@
 }
 
 @media only screen and (min-width:310px) and (max-width: 540px) {
+     .upevenet_respon_top {
+          margin-top: 14px;
+          margin-bottom: 10px;
+     }
+
+     .evnts_txt p {
+          font-size: 11px;
+     }
+
+     .ed_pop_sec2 {
+          padding-right: 0px;
+     }
+
+     .prmum_tag_vcc {
+          bottom: 18px;
+          right: 12px;
+     }
+
+     .infographic_img img {
+          width: 100%;
+     }
+
      .vcctv_tv iframe {
           border-radius: 14px;
           width: 100%;
@@ -967,7 +990,8 @@
      }
 
      .stes_crd_info span {
-          font-size: 1.5vw;
+          font-size: 7px;
+          padding: 0px 2px;
      }
 
 
