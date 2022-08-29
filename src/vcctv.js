@@ -33,8 +33,10 @@ function Vcctv(props) {
                         <p>
                             {props.item.stories_list[0].summary}
                         </p>
-                        <span>{moment(props.publish).format("Do MMM YYYY ")}</span>
-                        <span>{props.item.stories_list[0].author_details[0].name}</span>
+                        <ul className='d-flex'>
+                            <li className='manufact_authordate'>{moment(props.publish).format("Do MMM  ")}</li>
+                            <li className='manufact_author'>{props.item.stories_list[0].author_details[0].name}</li>
+                        </ul>
                     </div>
                 </div>
 

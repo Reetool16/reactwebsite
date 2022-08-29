@@ -10,16 +10,18 @@ import Onemaincard from './onemaincard';
 function Maincards(props) {
      const maincol = useRef();
 
-     // if (SwiperSlide === 8) {
-     //      maincol.current.style.Width = "260px"
-     // }
-
+     let slides = "swiper-button-next";
+     function none() {
+          if (slides === "swiper-button-disabled") {
+               console.log("kaam kr gaya")
+          }
+     }
      return (
           <>
                {props.item.stories_list[0] ?
-                    <div>
+                    <div className='slider_top'>
                          <div className='big_container responsive_big_container more_crd' key={props.item.stories_list[0].feid}>
-                              <div className='d-flex justify_spc_btwn align_cntr'>
+                              <div className='d-flex justify_spc_btwn align_cntr slid_heading'>
                                    <div className='main_crd_res_head'>
                                         <h2>
                                              {props.item.section_name}
@@ -41,16 +43,32 @@ function Maincards(props) {
                               <div className='maincard_col' ref={maincol}>
                                    <Swiper
                                         breakpoints={{
-                                             340: {
+                                             320: {
+                                                  slidesPerView: 1,
+                                                  spaceBetween: 20,
+                                             },
+                                             360: {
+                                                  slidesPerView: 1.2,
+                                                  spaceBetween: 20,
+                                             },
+                                             400: {
+                                                  slidesPerView: 1.5,
+                                                  spaceBetween: 20,
+                                             },
+                                             576: {
                                                   slidesPerView: 2,
                                                   spaceBetween: 20,
                                              },
                                              768: {
-                                                  slidesPerView: 2,
-                                                  // spaceBetween: 20,
+                                                  slidesPerView: 3,
+                                                  spaceBetween: 20,
+                                             },
+                                             876: {
+                                                  slidesPerView: 3.2,
+                                                  spaceBetween: 10,
                                              },
                                              1024: {
-                                                  slidesPerView: 4,
+                                                  slidesPerView: 4.2,
                                                   spaceBetween: 10,
                                              },
                                         }
@@ -63,14 +81,14 @@ function Maincards(props) {
                                         // - Creative
                                         modules={[Navigation, Pagination, Scrollbar, A11y]}
                                         spaceBetween={10}
-                                        slidesPerView={4}
+                                        slidesPerView={4.2}
                                         autoplay={true}
                                         stopOnLastSlide={true}
                                         navigation
                                         pagination={{ clickable: true }}
                                         scrollbar={{ draggable: true }}
                                         onSwiper={(swiper) => console.log(swiper)}
-                                        onSlideChange={() => console.log('slide change')}>
+                                        onSlideChange={none()}>
 
                                         <div className=''>
                                              <div className=''>
@@ -93,7 +111,8 @@ function Maincards(props) {
                                                                            width="100%"
                                                                            cntncls=""
                                                                            para="slidr_text"
-                                                                           authdet="slidr_author"
+                                                                           authdet="manufact_authordate"
+                                                                           aotho="manufact_author"
                                                                            nameshow="slidr_author shwNme"
                                                                            plusone="slidr_author plusONE"
                                                                            // heading={item.industry_details[0].name}

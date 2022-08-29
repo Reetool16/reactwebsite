@@ -30,7 +30,7 @@ export default function Twitter() {
                             </div>
                         </div>
                     </div>
-                    <hr style={{ backgroundColor: '#e3e3e3', marginTop: "45px" }} />
+
                 </div>
 
             </section>

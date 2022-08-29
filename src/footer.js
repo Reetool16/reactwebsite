@@ -9,12 +9,7 @@ function Footer() {
                <div className='footer'>
                     <div className='big_container'>
                          <div className='footer_head'>
-                              <h2><span>MOSAIC</span> DIGITAL</h2>
-                              <p>
-                                   <span>NEWS</span>
-                                   <span>INSIGHT</span>
-                                   <span style={{ border: "none" }}>EVENT</span>
-                              </p>
+                              <img src="./img/Mosaic-digital.png" alt="" />
                               <p>
                                    <img src="./img/facebook.png" alt="" />
                                    <img src="./img/twit.png" alt="" />
@@ -24,16 +19,32 @@ function Footer() {
 
                          <div className='big'>
                               <ul className='d-flex nav_list justify_spc_ard flex_rap fot_nav'>
-                                   <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> About us</a></li>
-                                   <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Advertise with us</a></li>
-                                   <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Contact us</a></li>
-                                   <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Copyright</a></li>
-                                   <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}>Privacy Policy </a></li>
-                                   <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Terms of use</a></li>
-                                   <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}>Company Listing</a></li>
-                                   <li><a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}>Tag Listing</a></li>
+                                   <li>
+                                        <a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> About us</a>
+                                   </li>
+                                   <li>
+                                        <a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Advertise with us</a>
+                                   </li>
+                                   <li>
+                                        <a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Contact us</a>
+                                   </li>
+                                   <li>
+                                        <a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Copyright</a>
+                                   </li>
+                                   <li>
+                                        <a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}>Privacy Policy </a>
+                                   </li>
+                                   <li>
+                                        <a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}> Terms of use</a>
+                                   </li>
+                                   <li>
+                                        <a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}>Company Listing</a>
+                                   </li>
+                                   <li>
+                                        <a href="/" className='nav_link_list' style={{ color: "#FFFFFFB2" }}>Tag Listing</a>
+                                   </li>
                               </ul>
-                              <ul className='d-flex nav_list justify_spc_evely flex_rap fot_nav2'>
+                              <ul className='d-flex nav_list justify_spc_evely flex_rap fot_nav'>
                                    <li>Our Product :</li>
                                    <li>VCCircle</li>
                                    <li>TechCircle</li>

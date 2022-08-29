@@ -52,39 +52,69 @@ function App() {
           info.map((item, index) => {
             if (item.section_slug === "top-stories") {
               return (
-                <Manufacturing item={item} />
+                <>
+                  <Manufacturing item={item} />
+                  {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
+                </>
               )
 
             }
             if (item.section_slug === "editors-pick") {
               return (<>
                 <Editor item={item} />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
                 <Input />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
                 <Twitter />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
+
+
+                <div className='big_container'>
+                  <div className='res_display '>
+                    <div className='ed_pop res_ed_pop_sudhir'>
+                      <div className='ad_bg'>
+                        <h5 className='ad_head'>Advertisment</h5>
+                        <div className='ad_img'>
+                          <img src="./img/sudhir2.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
               </>)
             }
             if (item.section_slug === "limited-partner") {
               return (<>
                 <Maincards item={item} />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
                 <Advertisment img="./img/adv2.png" width="100%" />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
               </>)
             }
             if (item.section_slug === "vccircle-premium") {
               return (<>
                 <Vccpremium item={item} />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
                 <Upevent info={upevents} />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
                 <Upeventrespon />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
               </>)
             }
             if (item.section_slug === "founders") {
               return (<>
                 <Maincards item={item} />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
                 <Advertisment img="./img/adv2.png" width="100%" />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
               </>)
             }
             if (item.section_slug === "most-popular") {
               return (<>
                 <Editor item={item} />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
 
 
               </>)
@@ -92,24 +122,30 @@ function App() {
             if (item.section_slug === "vcc-tv") {
               return (<>
                 <Vcctv item={item} />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
                 <Advertisment img="./img/adv2.png" width="100%" />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
               </>)
             }
             if (item.section_slug === "tmt") {
               return (<>
                 <Maincards item={item} />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
 
               </>)
             }
             if (item.section_slug === "financials") {
               return (<>
                 <Maincards item={item} />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
                 <Advertisment img="./img/adv2.png" width="100%" />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
               </>)
             }
             if (item.section_slug === "more-stories") {
               return (<>
                 <Morestories item={item} />
+                {item.section_border === "1" ? <div className='big_container'><hr className=' line_brder' /></div> : null}
               </>)
             }
             if (item.section_slug === "mergers-acquisitions") {
@@ -117,6 +153,7 @@ function App() {
                 <Maincards item={item} />
                 {/* <Premium /> */}
                 <Footer />
+                {/* {item.section_border === "1" ? <hr /> : null} */}
               </>)
             }
             return null;

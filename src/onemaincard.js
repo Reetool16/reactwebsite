@@ -14,7 +14,7 @@ function Onemaincard(props) {
                               {props.src ? (<img src={props.src} alt=" " className={props.imgcls} width={props.width} height={props.height} />) : <img src="./img/noimg.webp" alt=" " className={props.imgcls} width={props.width} height={props.height} />}
                               {props.premium === "1" ? <Premium premium="premium_tag prmum_tag_vcc" /> : null}
                          </Link>
-                         {/* {props.premium === "1" ? <Premium premium="premium_tag prmum_tag_vcc" /> : null} */}
+
                     </div>
                     <div className={props.cntncls}>
                          <Link to={props?.headingslug || " "}>
@@ -24,12 +24,20 @@ function Onemaincard(props) {
                          <p className={props.para}>
                               <Link to={props?.titleslug || " "}>
                                    {props.title}
-                              </Link></p>
-                         <span className={props.authdet}>{moment(props.publish).format("Do MMM YYYY ")}</span>
+                              </Link>
+                         </p>
+                         <ul className='d-flex align_item fllex_wrrp'>
+                              <li className={props.authdet}>{moment(props.publish).format("Do MMM  ")}</li>
+                              <li className={props.aotho}>{props.author}</li>
+                              <li className={props.plusone}> {props.one}</li>
+                              <li className={props.nameshow}>{props.incrval}</li>
+                         </ul>
+
+                         {/* <span className={props.authdet}>{moment(props.publish).format("Do MMM YYYY ")}</span>
                          <span className='dot'></span>
                          <span className={props.authdet}>{props.author}</span>
                          <span className={props.plusone}> {props.one} </span>
-                         <span className={props.nameshow}>{props.incrval}</span>
+                         <span className={props.nameshow}>{props.incrval}</span> */}
                     </div>
                </div>
           </div>

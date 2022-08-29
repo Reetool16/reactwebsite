@@ -14,10 +14,10 @@ export default function Manufacturing(props) {
                 <div className='big_container' key={props.item.stories_list.feid}>
                     <div className='d-flex manufact_banner justify_spc_btwn flex_drct_clum'>
                         <div className='manufact_info manufact_resinfo'>
-                            <h5>
+                            <h2>
 
                                 {props.item.stories_list[0].industry_details[0].name.toUpperCase()}
-                            </h5>
+                            </h2>
                             <h1>
 
                                 {props.item.stories_list[0].title}
@@ -26,12 +26,13 @@ export default function Manufacturing(props) {
 
                                 {props.item.stories_list[0].summary}
                             </p>
-                            <span>{moment(props.publish).format("Do MMM YYYY ")}</span>
-                            <span className='dot'></span>
-                            <span >{props.item.stories_list[0].author_details[0].name}</span>
-                            <p><button className='btn'>READ MORE</button></p>
+                            <ul className='d-flex'>
+                                <li className='manufact_authordate'>{moment(props.publish).format("Do MMM  ")}</li>
+                                <li className='manufact_author'>{props.item.stories_list[0].author_details[0].name}</li>
+                            </ul>
+                            <button className='btn'>READ MORE</button>
                         </div>
-                        <div className='manufact_respimg big_fact_respimg'>
+                        <div className='manufact_respimg big_fact_respimg manufact_info'>
                             <img src={props.item.stories_list[0].file_url} alt="" className='brdr_rdus manufacture_bigimg ' />
                         </div>
                     </div>
@@ -74,6 +75,8 @@ export default function Manufacturing(props) {
                                     nameshow="slidr_author shwNme"
                                     plusone="slidr_author plusONE"
                                     publish={item.publish}
+                                    authdet="manufact_authordate"
+                                    aotho="manufact_author"
                                     author={item.author_details[0].name}
                                     incrval={item.author_details.length > 1 ? item.author_details[1].name : " "}
                                     one={item.author_details.length > 1 ? "+1" : null}

@@ -8,9 +8,9 @@ export default function Editor(props) {
         {props.item.stories_list[0] ?
             <section className="editors_sections_banner" key={props.item.stories_list[0].feid}>
                 <div className='big_container'>
+                    <h2 className='edpophead'>{props.item.section_name}</h2>
                     <div className='d-flex justify_spc_btwn ed_poprap'>
                         <div className='ed_pop res_ed_pop'>
-                            <h2>{props.item.section_name}</h2>
 
 
 
@@ -28,8 +28,12 @@ export default function Editor(props) {
                                 <p className='ed_pop_txt'>
                                     {props.item.stories_list[0].title}
                                 </p>
-                                <span className='ed_pop_span'>{moment(props.publish).format("Do MMM YYYY")} </span>
-                                <span className='ed_pop_span'>{props.item.stories_list[0].author_details[0].name}</span>
+                                <ul className='d-flex'>
+                                    <li className="manufact_authordate">{moment(props.publish).format("Do MMM  ")}</li>
+                                    <li className="manufact_author">{props.item.stories_list[0].author_details[0].name}</li>
+                                </ul>
+                                {/* <span className='ed_pop_span'>{moment(props.publish).format("Do MMM YYYY")} </span>
+                                <span className='ed_pop_span'>{props.item.stories_list[0].author_details[0].name}</span> */}
                             </div>
                         </div>
 
@@ -58,6 +62,8 @@ export default function Editor(props) {
                                             titleslug={item.slug}
                                             publish={item.publish}
                                             author={item.author_details[0].name}
+                                            authdet="manufact_authordate"
+                                            aotho="manufact_author"
                                             incrval={item.author_details.length > 1 ? item.author_details[1].name : " "}
                                             one={item.author_details.length > 1 ? "+1" : null}
                                         />

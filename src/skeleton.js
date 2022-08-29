@@ -34,7 +34,7 @@ function Skeleton() {
                     </div>
 
                     <div className='d-flex justify_spc_btwn manufact-sm-card flex_rap'>
-                         <div className='manfact_crd responsive_manfact_crd'>
+                         <div className='manfact_crd responsive_manfact_crd skeleton_btom'>
                               <div className='manfact_crd_img manufact_respimg skeleton_smhead'>
                                    <img src="./img/economy.png" alt="" className='skele_img' />
                                    {/* <span className='respons_premium'>PREMIUM</span> */}
@@ -49,7 +49,7 @@ function Skeleton() {
                          </div>
 
 
-                         <div className='manfact_crd responsive_manfact_crd '>
+                         <div className='manfact_crd responsive_manfact_crd skeleton_btom '>
                               <div className='manfact_crd_img manufact_respimg skeleton_smhead'>
                                    <img src="./img/finance.png" alt="" className='skele_img' />
                                    {/* <span className='respons_premium'>PREMIUM</span> */}
@@ -63,7 +63,7 @@ function Skeleton() {
                               </div>
                          </div>
 
-                         <div className='manfact_crd manufact_respimg responsive_manfact_crd '>
+                         <div className='manfact_crd manufact_respimg responsive_manfact_crd skeleton_btom '>
                               <div className='skeleton_smhead'>
                                    <img src="./img/consumer.png" alt="" className='skele_img' />
                               </div>
@@ -76,8 +76,8 @@ function Skeleton() {
 
                               </div>
                          </div>
-                         <div className='manfact_crd responsive_manfact_crd'>
-                              <div className='manfact_crd_img manufact_respimg skeleton_smhead'>
+                         <div className='manfact_crd responsive_manfact_crd skeleton_btom'>
+                              <div className='manfact_crd_img manufact_respimg skeleton_smhead '>
                                    <img src="./img/economyblock.png" alt="" className='skele_img' />
                                    {/* <span className='respons_premium'>PREMIUM</span> */}
                               </div>

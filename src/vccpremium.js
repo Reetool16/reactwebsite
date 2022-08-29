@@ -26,18 +26,34 @@ function Vccpremium(props) {
 
                         <Swiper
                             breakpoints={{
-                                340: {
+                                320: {
                                     slidesPerView: 1,
                                     spaceBetween: 20,
                                 },
-                                768: {
+                                400: {
+                                    slidesPerView: 1.5,
+                                    spaceBetween: 20,
+                                },
+                                576: {
                                     slidesPerView: 2,
                                     spaceBetween: 20,
                                 },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 20,
+                                },
+                                876: {
+                                    slidesPerView: 3.2,
+                                    spaceBetween: 10,
+                                },
                                 1024: {
-                                    slidesPerView: 4,
+                                    slidesPerView: 3.5,
                                     spaceBetween: 50,
                                 },
+                                1200: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 30,
+                                }
                             }}
                             effect='Cube'
                             // - Coverflow
@@ -80,6 +96,8 @@ function Vccpremium(props) {
                                                         title={item.title}
                                                         titleslug={item.slug}
                                                         publish={item.publish}
+                                                        authdet="manufact_authordate"
+                                                        aotho="manufact_author"
                                                         author={item.author_details[0].name}
                                                         incrval={item.author_details.length > 1 ? item.author_details[1].name : " "}
                                                         one={item.author_details.length > 1 ? "+1" : null}

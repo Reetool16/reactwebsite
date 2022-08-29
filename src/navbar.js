@@ -90,7 +90,7 @@ export default function Navbar() {
                         </ul>
                     </div>
 
-                    <div className='d-flex justify_spc_btwn responsive_navbar'>
+                    <div className='d-flex justify_spc_btwn responsive_navbar align_item'>
                         <ul className='d-flex justify_spc_btwn nav_list '>
                             <li className='down_nav_' style={{ paddingLeft: "0px" }}> <a href="/" className='down_nav_list' style={{ paddingLeft: "0px" }} >Private Equity</a> </li>
 

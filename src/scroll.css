@@ -8,6 +8,15 @@
 
 }
 
+.slider_top {
+     margin-top: 40px;
+     margin-bottom: 40px;
+}
+
+.slid_heading {
+     margin-bottom: 25px;
+}
+
 .section {
      height: 360px;
      scroll-snap-align: center;
@@ -38,6 +47,9 @@
      overflow: hidden;
      text-overflow: ellipsis;
      margin-bottom: 23px;
+     font-size: 14px;
+     letter-spacing: -.28px;
+     line-height: 21px;
 }
 
 .slidr_author {
@@ -63,7 +75,13 @@
      padding: 7px 13px;
      border-radius: 100%;
      color: white;
-     display: none;
+     /* display: none; */
+}
+
+.swiper-button-disabled {
+     opacity: 0 !important;
+     cursor: auto !important;
+     pointer-events: none !important;
 }
 
 .slidr_primum {
