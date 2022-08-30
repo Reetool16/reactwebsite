@@ -9,7 +9,7 @@ function Skeleton() {
 
                <Advertisment img="" width="100%" adtismnt_head="skelead" st={{ height: "50px" }} />
                <div className='big_container'>
-                    <div className='d-flex manufact_banner justify_spc_btwn flex_drct_clum'>
+                    <div className='d-flex manufact_banner justify_spc_btwn flex_drct_clum gap'>
                          <div className='manufact_info manufact_resinfo'>
                               <span className='skeleton_smhead'>
                                    Manufacturing
@@ -33,7 +33,7 @@ function Skeleton() {
                          </div>
                     </div>
 
-                    <div className='d-flex justify_spc_btwn manufact-sm-card flex_rap'>
+                    <div className='d-flex justify_spc_btwn skeleflex_rap'>
                          <div className='manfact_crd responsive_manfact_crd skeleton_btom'>
                               <div className='manfact_crd_img manufact_respimg skeleton_smhead'>
                                    <img src="./img/economy.png" alt="" className='skele_img' />

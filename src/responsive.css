@@ -207,6 +207,10 @@
           margin: 0 auto;
      }
 
+     /* .manufact_banner {
+          margin-top: 80px;
+     } */
+
      .adverstisment_size {
           margin: 0 auto;
           width: 80%;
@@ -502,11 +506,11 @@
           flex-wrap: wrap;
      }
 
-     .res_display {
+     /* .res_display {
           display: block !important;
           margin-bottom: 15px;
           margin-top: 15px;
-     }
+     } */
 
 }
 
@@ -571,8 +575,8 @@
      }
 
      .mnfact_crd_info_respon p {
-          font-size: 3vw;
-          line-height: 13px;
+          font-size: 14px;
+          line-height: 16px;
           width: 100%;
      }
 

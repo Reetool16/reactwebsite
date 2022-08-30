@@ -9,12 +9,8 @@ export default function Editor(props) {
             <section className="editors_sections_banner" key={props.item.stories_list[0].feid}>
                 <div className='big_container'>
                     <h2 className='edpophead'>{props.item.section_name}</h2>
-                    <div className='d-flex justify_spc_btwn ed_poprap'>
+                    <div className='d-flex justify_spc_btwn ed_poprap edpopgap'>
                         <div className='ed_pop res_ed_pop'>
-
-
-
-
                             <div className='ed_pop_img'>
                                 <div className='manfact_crd_img'>
                                     <img src={props.item.stories_list[0].file_url} alt="" className='brdr_rdus' />

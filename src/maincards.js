@@ -56,7 +56,7 @@ function Maincards(props) {
                                                   spaceBetween: 20,
                                              },
                                              576: {
-                                                  slidesPerView: 2,
+                                                  slidesPerView: 2.2,
                                                   spaceBetween: 20,
                                              },
                                              768: {

@@ -18,6 +18,14 @@ ul {
 }
 
 .skeleton_smhead {
+  border-radius: 14px;
+}
+
+.skeleton_btom {
+  width: 24%;
+}
+
+.skeleton_smhead {
   color: transparent !important;
   /* background-color: hsl(0, 0%, 94%) !important; */
   /* padding: 6px 8px !important; */
@@ -37,6 +45,7 @@ ul {
 
 .skele_img {
   visibility: hidden;
+  width: 100%;
 }
 
 .skelead {
@@ -472,6 +481,10 @@ a {
 /* .ed_pop {
   width: 33%;
 } */
+.edpopgap {
+  gap: 15px;
+}
+
 .edpophead {
   font-size: 22px;
   font-weight: 700;
@@ -716,6 +729,11 @@ a {
   border: 1px solid #EDEDED;
   width: 80%; */
   /* height: 260px; */
+}
+
+.main_crd_res_head p {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /* .maincard_col::before {

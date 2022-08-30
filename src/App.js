@@ -3,6 +3,7 @@ import axios from 'axios'
 import './App.css';
 import './responsive.css'
 import './scroll.css'
+import './skeleton.css'
 // import Advertisment from './advertisment'
 import Navbar from './navbar';
 import Manufacturing from './manufacturing';
@@ -151,9 +152,9 @@ function App() {
             if (item.section_slug === "mergers-acquisitions") {
               return (<>
                 <Maincards item={item} />
-                {/* <Premium /> */}
+
                 <Footer />
-                {/* {item.section_border === "1" ? <hr /> : null} */}
+
               </>)
             }
             return null;
