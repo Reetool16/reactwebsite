@@ -87,6 +87,7 @@ export default function Manufacturing(props) {
                                     publish={item.publish}
                                     authdet="manufact_authordate"
                                     aotho="manufact_author"
+                                    athordetails="d-flex align_item fllex_wrrp mnfact_crd_ul"
                                     author={item.author_details[0].name}
                                     incrval={item.author_details.length > 1 ? item.author_details[1].name : " "}
                                     one={item.author_details.length > 1 ? "+1" : null}

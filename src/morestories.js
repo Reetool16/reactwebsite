@@ -36,6 +36,7 @@ export default function Morestories(props) {
                                         titleslug={item.slug}
                                         publish={item.publish}
                                         author={item.author_details[0].name}
+                                        athordetails="d-flex align_item fllex_wrrp"
                                     />
 
 

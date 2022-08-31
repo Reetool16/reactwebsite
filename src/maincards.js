@@ -120,6 +120,7 @@ function Maincards(props) {
                                                                            publish={item.publish}
                                                                            author={item.author_details[0].name}
                                                                            incrval={item.author_details.length > 1 ? item.author_details[1].name : " "}
+                                                                           athordetails="d-flex align_item fllex_wrrp"
                                                                            one={item.author_details.length > 1 ? "+1" : null}
                                                                       />
 
@@ -128,42 +129,7 @@ function Maincards(props) {
 
                                                        )
                                                   })}
-                                                  {/* <div className='slidr_eachcrd main_crds_box'>
-                                                  <div className='slidr_primum'>
-                                                       <img src={props.item.stories_list[0].file_url} alt="" />
-                                                       <span>Premium</span>
-                                                  </div>
 
-                                                  <p className="slidr_text">{props.item.stories_list[0].title}</p>
-                                                  <span className="slidr_author">{props.item.stories_list[0].author_details[0].name}</span>
-                                             </div> */}
-                                                  {/* <div className='slidr_eachcrd main_crds_box'>
-                                                  <div className='slidr_primum'>
-                                                       <img src={props.item.stories_list[0].file_url} alt="" />
-                                                       <span>Premium</span>
-                                                  </div>
-
-                                                  <p className="slidr_text">{props.item.stories_list[0].title}</p>
-                                                  <span className="slidr_author">{props.item.stories_list[0].author_details[0].name}</span>
-                                             </div> */}
-                                                  {/* <div className='slidr_eachcrd main_crds_box'>
-                                                  <div className='slidr_primum'>
-                                                       <img src={props.item.stories_list[0].file_url} alt="" />
-                                                       <span>Premium</span>
-                                                  </div>
-
-                                                  <p className="slidr_text">{props.item.stories_list[0].title}</p>
-                                                  <span className="slidr_author">{props.item.stories_list[0].author_details[0].name}</span>
-                                             </div> */}
-                                                  {/* <div className='slidr_eachcrd main_crds_box'>
-                                                  <div className='slidr_primum'>
-                                                       <img src={props.item.stories_list[0].file_url} alt="" />
-                                                       <span>Premium</span>
-                                                  </div>
-
-                                                  <p className="slidr_text">{props.item.stories_list[0].title}</p>
-                                                  <span className="slidr_author">{props.item.stories_list[0].author_details[0].name}</span>
-                                             </div> */}
 
 
                                              </div>

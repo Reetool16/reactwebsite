@@ -26,7 +26,7 @@ function Onemaincard(props) {
                                    {props.title}
                               </Link>
                          </p>
-                         <ul className='d-flex align_item fllex_wrrp'>
+                         <ul className={props.athordetails}>
                               <li className={props.authdet}>{moment(props.publish).format("Do MMM  ")}</li>
                               <li className={props.aotho}>{props.author}</li>
                               <li className={props.plusone}> {props.one}</li>
