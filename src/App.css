@@ -5,6 +5,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 .wi {
@@ -228,8 +229,8 @@ a {
 }
 
 .editors_sections_banner {
-  padding-top: 35px;
-  /* padding-bottom: 25px; */
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 
@@ -537,7 +538,7 @@ a {
 .ed_pop_sec2 {
   /* margin-top: 39px; */
   /* padding-top: 18px; */
-  margin-bottom: 38px;
+  /* margin-bottom: 38px; */
   border-right: 1px solid #E3E3E3;
   padding-right: 25px;
 }
@@ -676,7 +677,7 @@ a {
 }
 
 .twitter_img {
-  padding-right: 20px;
+  /* padding-right: 20px; */
   border-right: 1px solid #e3e3e3;
   height: 400px;
   position: relative;
@@ -687,7 +688,7 @@ a {
   bottom: 1px;
   left: 4px;
   background-color: #ededed4f;
-  width: 89%;
+  /* width: 89%; */
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
   padding: 0px 8px;
@@ -874,15 +875,31 @@ a {
 .input_BBox {
   background-color: #000000;
   /* height: 130px; */
-  padding: 15px 0px;
+  padding: 24px 40px;
   border-radius: 14px;
   margin: 30px 0px;
+  width: 100%;
 }
+
+.input_gap {
+  gap: 20px;
+}
+
+/* .input_enve {} */
+
+.in_eve_img {
+  width: 54px;
+}
+
+/* .input_txt {
+  width: 100%;
+} */
 
 .input_txt p {
   color: white;
   font-size: 20px;
-  margin-bottom: 0px;
+  line-height: 26px;
+  letter-spacing: -1px;
 }
 
 .input_txt h5 {
@@ -891,14 +908,25 @@ a {
   color: white;
 }
 
+.input_field {
+  width: 100%;
+  max-width: 340px;
+}
+
 .input_field input {
-  width: 350px;
+  /* width: 350px; */
+  width: 100%;
   height: 50px;
   border-radius: 8px;
   background-color: #FFFFFF34;
   border: none;
   color: white;
+  padding: 0px 8px;
 }
+
+/* .input_btn {
+  width: 100%;
+} */
 
 .input_btn button {
   width: 150px;

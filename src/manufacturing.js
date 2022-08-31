@@ -3,6 +3,7 @@ import Advertisment from './advertisment'
 // import axios from 'axios'
 import Onemaincard from './onemaincard'
 import moment from 'moment'
+import { Link } from 'react-router-dom'
 
 export default function Manufacturing(props) {
 
@@ -14,18 +15,24 @@ export default function Manufacturing(props) {
                 <div className='big_container' key={props.item.stories_list.feid}>
                     <div className='d-flex manufact_banner justify_spc_btwn flex_drct_clum'>
                         <div className='manufact_info manufact_resinfo'>
-                            <h2>
+                            <Link to={props.item.stories_list[0].industry_details[0].name}>
+                                <h2>
 
-                                {props.item.stories_list[0].industry_details[0].name.toUpperCase()}
-                            </h2>
-                            <h1>
+                                    {props.item.stories_list[0].industry_details[0].name.toUpperCase()}
+                                </h2>
+                            </Link>
+                            <Link to={props.item.stories_list[0].title}>
+                                <h1>
 
-                                {props.item.stories_list[0].title}
-                            </h1>
-                            <p>
+                                    {props.item.stories_list[0].title}
+                                </h1>
+                            </Link>
+                            <Link to={props.item.stories_list[0].summary}>
+                                <p>
 
-                                {props.item.stories_list[0].summary}
-                            </p>
+                                    {props.item.stories_list[0].summary}
+                                </p>
+                            </Link>
                             <ul className='d-flex'>
                                 <li className='manufact_authordate'>{moment(props.publish).format("Do MMM  ")}</li>
                                 <li className='manufact_author'>{props.item.stories_list[0].author_details[0].name}</li>
@@ -33,7 +40,10 @@ export default function Manufacturing(props) {
                             <button className='btn'>READ MORE</button>
                         </div>
                         <div className='manufact_respimg big_fact_respimg manufact_info'>
-                            <img src={props.item.stories_list[0].file_url} alt="" className='brdr_rdus manufacture_bigimg ' />
+                            <Link to={props.item.stories_list[0].file_url}>
+                                <img src={props.item.stories_list[0].file_url} alt="" className='brdr_rdus manufacture_bigimg ' />
+                            </Link>
+
                         </div>
                     </div>
 

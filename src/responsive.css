@@ -512,6 +512,21 @@
           margin-top: 15px;
      } */
 
+     .input_field {
+          width: 100%;
+          max-width: 340px;
+     }
+
+     .input_btn {
+          width: 100%;
+          max-width: 340px;
+     }
+
+     .input_btn button {
+          width: 100%;
+     }
+
+
 }
 
 @media screen and (min-width: 320px) and (max-width:576px) {
@@ -520,6 +535,7 @@
           /* margin: 0 auto; */
           padding: 0px 15px;
      }
+
 
      .adverstisment_size {
           display: none;
@@ -575,7 +591,7 @@
      }
 
      .mnfact_crd_info_respon p {
-          font-size: 14px;
+          font-size: 12px;
           line-height: 16px;
           width: 100%;
      }
@@ -586,6 +602,11 @@
 
      .manufact_authordate {
           font-size: 10px;
+     }
+
+     .manufacture_bigimg {
+          /* width: 100%; */
+          height: 250px;
      }
 
      .manufact_info h2 {
@@ -657,7 +678,7 @@
      }
 
      .evnts_txt h4 {
-          font-size: 2vw;
+          font-size: 12px;
           height: 35px;
      }
 
@@ -817,7 +838,7 @@
 
      .input_flex_rap {
           flex-wrap: wrap;
-          gap: 10px;
+          gap: 15px;
      }
 
      .vcctv_bg {
@@ -865,15 +886,32 @@
      }
 
      .input_BBox {
-          padding: 15px 13px;
+          padding: 22px 20px;
      }
 
-     .input_field input {
+     .input_field {
+          width: 100%;
+          max-width: 340px;
+     }
+
+     .input_btn {
+          width: 100%;
+          max-width: 340px;
+     }
+
+     .input_btn button {
           width: 100%;
      }
 
+     .input_txt {
+          text-align: center;
+     }
+
+     /* .input_field input {
+          width: 225px;
+     } */
+
      .twitter_img {
-          padding-right: 20px;
           border-right: 1px solid #e3e3e3;
           height: auto;
           position: relative;
@@ -963,5 +1001,17 @@
           display: block !important;
           margin-bottom: 15px;
           margin-top: 15px;
+     }
+
+     .twitter_img_txt {
+          position: absolute;
+          bottom: 0px;
+          top: 81.5%;
+          left: 4px;
+          background-color: #ededed4f;
+          /* width: 89%; */
+          border-bottom-right-radius: 25px;
+          border-bottom-left-radius: 25px;
+          padding: 0px 8px;
      }
 }
