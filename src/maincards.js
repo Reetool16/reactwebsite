@@ -48,11 +48,11 @@ function Maincards(props) {
                                                   spaceBetween: 20,
                                              },
                                              360: {
-                                                  slidesPerView: 1.2,
+                                                  slidesPerView: 1.5,
                                                   spaceBetween: 20,
                                              },
                                              400: {
-                                                  slidesPerView: 1.5,
+                                                  slidesPerView: 1.8,
                                                   spaceBetween: 20,
                                              },
                                              480: {
@@ -60,7 +60,7 @@ function Maincards(props) {
                                                   spaceBetween: 20,
                                              },
                                              576: {
-                                                  slidesPerView: 2.2,
+                                                  slidesPerView: 2.3,
                                                   spaceBetween: 20,
                                              },
                                              768: {
