@@ -337,16 +337,18 @@
 
      .responsive_nav_list {
           display: block;
-          margin-top: 5px;
+          margin-top: 0px;
           /* height: 306px; */
           text-align: center;
           border: 1px solid #dcdcdc2e;
-          border-radius: 14px;
+          border-bottom-left-radius: 14px;
+          border-bottom-right-radius: 14px;
           animation: myfirst linear 0.1s forwards;
           position: absolute;
           top: 0%;
           width: 100%;
           background-color: white;
+          left: 0px;
      }
 
      @keyframes myfirst {
@@ -374,6 +376,10 @@
           padding: 10px 10px;
      }
 
+     .active_nav_list {
+          color: #F83900;
+     }
+
      .respon_nav_link_sub {
           display: inline-flex;
           align-items: center;
@@ -398,25 +404,25 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding: 0px 22px;
+          /* padding: 0px 22px; */
      }
 
      .navbar_ {
           height: auto;
           padding-bottom: 15px;
           padding-top: 15px;
-          position: fixed;
+          /* position: fixed; */
           width: 100%;
           z-index: 8;
           background-color: white;
           top: 0%;
-          box-shadow: 0px 5px 10px #00000014;
+          /* box-shadow: 0px 5px 10px #00000014; */
 
      }
 
-     .nav_res_big_container {
+     /* .nav_res_big_container {
           max-width: 100% !important;
-     }
+     } */
 
 
      .ham_icon {
@@ -548,6 +554,11 @@
           position: absolute;
           bottom: -14px;
 
+     }
+
+     .editors_sections_banner {
+          padding-top: 25px;
+          padding-bottom: 10px;
      }
 
 }
@@ -722,11 +733,12 @@
 
      .responsive_nav_list {
           display: block;
-          margin-top: 5px;
+          margin-top: 0px;
           /* height: 306px; */
-          text-align: center;
+          text-align: left;
           border: 1px solid #dcdcdc2e;
-          border-radius: 14px;
+          border-bottom-left-radius: 14px;
+          border-bottom-right-radius: 14px;
           animation: myfirst linear 0.1s forwards;
           position: absolute;
           top: 0%;
@@ -757,6 +769,10 @@
      .down_nav_ {
           border-bottom: 1px solid #e3e3e3;
           padding: 10px 10px;
+     }
+
+     .active_nav_list {
+          color: #F83900;
      }
 
      .respon_nav_link_sub {
@@ -817,7 +833,7 @@
           border-right: none;
           margin-top: 20px;
           padding-right: 0px;
-          margin-bottom: 20px;
+          margin-bottom: 0px;
      }
 
      .ed_pop_sec2txt p {
@@ -1047,5 +1063,10 @@
      .mnfact_crd_ul {
           position: unset;
           bottom: 0px;
+     }
+
+     .editors_sections_banner {
+          padding-top: 25px;
+          padding-bottom: 10px;
      }
 }

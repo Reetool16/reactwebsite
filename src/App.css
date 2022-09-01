@@ -548,11 +548,18 @@ a {
   padding-right: 25px;
 }
 
+.brdr_ed_pop {
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.brdr_ed_pop:last-child {
+  border-bottom: none;
+}
+
 .ed_pop_line {
   padding-bottom: 12px;
-  border-bottom: 1px solid #E3E3E3;
-  /* padding-top: 12px; */
-  margin-bottom: 12px;
+  padding-top: 12px;
+  /* margin-bottom: 12px; */
 }
 
 .ed_pop_line2 {
@@ -1036,7 +1043,7 @@ a {
 
 
 .line_brder {
-  margin: 28px auto 30px auto !important;
+  margin: 30px auto 30px auto !important;
 }
 
 

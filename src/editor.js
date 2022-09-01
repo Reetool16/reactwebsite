@@ -38,33 +38,34 @@ export default function Editor(props) {
                             {props.item.stories_list.map((item, index) => {
                                 if (index === 0) return null
                                 return (<>
-                                    <div className='rltiv'>
 
-                                        <Onemaincard
-                                            edcls="d-flex ed_pop_line justify_spc_btwn res_ed_pop_line"
-                                            crd_img="edtor_pop_img_sec2"
-                                            src={item.file_url}
-                                            premium={item.premium}
-                                            imgslug={item.slug}
-                                            imgcls='brdr_rdus'
-                                            width="100%"
-                                            height="93px"
-                                            cntncls="ed_pop_sec2txt"
-                                            nameshow="slidr_author shwNme"
-                                            plusone="slidr_author plusONE"
-                                            heading={item.industry_details[0].name}
-                                            headingslug={item.industry_details[0].name}
-                                            title={item.title}
-                                            titleslug={item.slug}
-                                            publish={item.publish}
-                                            author={item.author_details[0].name}
-                                            authdet="manufact_authordate"
-                                            aotho="manufact_author"
-                                            athordetails="d-flex align_item fllex_wrrp"
-                                            incrval={item.author_details.length > 1 ? item.author_details[1].name : " "}
-                                            one={item.author_details.length > 1 ? "+1" : null}
-                                        />
-                                    </div>
+
+                                    <Onemaincard
+                                        edcls="d-flex ed_pop_line justify_spc_btwn res_ed_pop_line"
+                                        crd_img="edtor_pop_img_sec2"
+                                        src={item.file_url}
+                                        premium={item.premium}
+                                        imgslug={item.slug}
+                                        imgcls='brdr_rdus'
+                                        width="100%"
+                                        height="93px"
+                                        cntncls="ed_pop_sec2txt"
+                                        nameshow="slidr_author shwNme"
+                                        plusone="slidr_author plusONE"
+                                        heading={item.industry_details[0].name}
+                                        headingslug={item.industry_details[0].name}
+                                        title={item.title}
+                                        titleslug={item.slug}
+                                        publish={item.publish}
+                                        author={item.author_details[0].name}
+                                        authdet="manufact_authordate"
+                                        aotho="manufact_author"
+                                        athordetails="d-flex align_item fllex_wrrp"
+                                        incrval={item.author_details.length > 1 ? item.author_details[1].name : " "}
+                                        one={item.author_details.length > 1 ? "+1" : null}
+                                        Mcls="brdr_ed_pop"
+                                    />
+
                                 </>
 
                                 )

@@ -34,6 +34,10 @@ function Vccpremium(props) {
                                     slidesPerView: 1.5,
                                     spaceBetween: 20,
                                 },
+                                480: {
+                                    slidesPerView: 1.8,
+                                    spaceBetween: 20,
+                                },
                                 576: {
                                     slidesPerView: 2,
                                     spaceBetween: 20,
