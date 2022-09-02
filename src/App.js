@@ -12,17 +12,12 @@ import Twitter from './twitter';
 import Vccpremium from './vccpremium';
 import Upevent from './upevent';
 import Maincards from './maincards';
-// import { Infopartner, founder, tmt, techcircle, mergers, financial, vccpremium, upevents } from './data.js';
 import { upevents } from './data.js';
 import Vcctv from './vcctv';
 import Input from './input';
 import Morestories from './morestories';
 import Upeventrespon from './upeventrespon';
 import Footer from './footer';
-// import Loader from './loader';
-// import Premium from './premium';
-// import CardSlider from './cardslider';
-// import Manufacturingtwo from './manufacturingtwo';
 import Skeleton from './skeleton';
 import Advertisment from './advertisment'
 

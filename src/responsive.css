@@ -349,6 +349,8 @@
           width: 100%;
           background-color: white;
           left: 0px;
+          /* height: calc(100vh - 0px);
+          overflow: scroll; */
      }
 
      @keyframes myfirst {
@@ -373,7 +375,7 @@
 
      .down_nav_ {
           border-bottom: 1px solid #e3e3e3;
-          padding: 10px 10px;
+          padding: 9.8px 10px;
      }
 
      .active_nav_list {
@@ -408,6 +410,10 @@
      .navbar_logo img {
           width: auto;
           height: auto;
+     }
+
+     .crownimg {
+          padding-right: 10px;
      }
 
      .responsive_navbar {
@@ -605,6 +611,12 @@
           border-bottom: 1px solid #e3e3e3;
      }
 
+     .manfact_crd.responsive_manfact_crd:last-child {
+          width: 100%;
+          margin: 20px 0px;
+          border-bottom: none;
+     }
+
      .manufact-sm-card {
           margin-top: 35px;
           gap: 0px;
@@ -750,7 +762,6 @@
      .responsive_nav_list {
           display: block;
           margin-top: 0px;
-          /* height: 306px; */
           text-align: left;
           border: 1px solid #dcdcdc2e;
           border-bottom-left-radius: 14px;
@@ -760,6 +771,8 @@
           top: 0%;
           width: 100%;
           background-color: white;
+          /* height: calc(100vh - 0px);
+          overflow: scroll; */
      }
 
      @keyframes myfirst {
@@ -784,7 +797,7 @@
 
      .down_nav_ {
           border-bottom: 1px solid #e3e3e3;
-          padding: 10px 10px;
+          padding: 9.8px 10px;
      }
 
      .active_nav_list {
@@ -803,6 +816,10 @@
      .navbar_logo img {
           width: auto;
           height: auto;
+     }
+
+     .crownimg {
+          padding-right: 10px;
      }
 
      .responsive_navbar {

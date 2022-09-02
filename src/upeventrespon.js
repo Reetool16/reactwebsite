@@ -3,18 +3,6 @@ import React from 'react'
 function Upeventrespon() {
      return (
           <div className="big_container">
-               {/* <div className='d-flex justify_spc_btwn align_cntr'>
-                    <div className=''>
-                         <h2>
-                              Upcoming Events
-                         </h2>
-                    </div>
-                    <div>
-                         <p>
-                              View more <img src="./img/Iconright.svg" alt="" />
-                         </p>
-                    </div>
-               </div> */}
 
                <div className='upcoimg_events_respons'>
                     <div className="d-flex justify_spc_btwn align_cntr evnts_blocks">

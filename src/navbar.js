@@ -29,7 +29,7 @@ export default function Navbar() {
                                 </a>
                                 <img src="./img/VCC-logo.svg" alt="" className='respon_navbar_logo' />
                             </div>
-                            <a href="/" className='nav_link_list respon_nav_link_sub'><img src="./img/crown.png" alt="" /> Subscribe</a>
+                            <a href="/" className='nav_link_list respon_nav_link_sub'><img src="./img/crown.png" alt="" className='crownimg' /> Subscribe</a>
                         </div>
 
 

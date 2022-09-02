@@ -28,8 +28,6 @@ export default function Editor(props) {
                                     <li className="manufact_authordate">{moment(props.publish).format("Do MMM  ")}</li>
                                     <li className="manufact_author">{props.item.stories_list[0].author_details[0].name}</li>
                                 </ul>
-                                {/* <span className='ed_pop_span'>{moment(props.publish).format("Do MMM YYYY")} </span>
-                                <span className='ed_pop_span'>{props.item.stories_list[0].author_details[0].name}</span> */}
                             </div>
                         </div>
 
