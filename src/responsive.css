@@ -90,6 +90,11 @@
           bottom: -10px;
 
      }
+
+     .fot_nav {
+          flex-wrap: wrap;
+          gap: 5px;
+     }
 }
 
 @media screen and (min-width: 768px) and (max-width:992px) {
@@ -540,6 +545,7 @@
      .fot_nav {
           flex-wrap: wrap;
           gap: 5px;
+          margin-bottom: 15px;
      }
 
      .imageswidth img {
@@ -646,7 +652,7 @@
      .manufact_respimg img {
           margin-bottom: 0px;
           /* width: 50%; */
-          width: 185px;
+          width: 160px;
      }
 
      .responsive_manfact_crd {
@@ -669,7 +675,7 @@
      }
 
      .mnfact_crd_info_respon p {
-          font-size: 12px;
+          font-size: 11px;
           line-height: 16px;
           width: 100%;
           display: -webkit-box;
@@ -680,11 +686,11 @@
      }
 
      .manufact_author {
-          font-size: 10px;
+          font-size: 9px;
      }
 
      .manufact_authordate {
-          font-size: 10px;
+          font-size: 9px;
      }
 
      .manufacture_bigimg {
@@ -837,6 +843,7 @@
      .respon_nav_link_sub {
           display: inline-flex;
           align-items: center;
+          padding: 8px 6px;
      }
 
      .respon_navbar_logo {
@@ -970,6 +977,7 @@
      .fot_nav {
           flex-wrap: wrap;
           gap: 12px;
+          margin-bottom: 15px;
      }
 
      .fot_nav li a {

@@ -10,12 +10,7 @@ import Onemaincard from './onemaincard';
 function Maincards(props) {
      const maincol = useRef();
 
-     let slides = "swiper-button-next";
-     function none() {
-          if (slides === "swiper-button-disabled") {
-               console.log("kaam kr gaya")
-          }
-     }
+
      return (
           <>
                {props.item.stories_list[0] ?
@@ -92,7 +87,7 @@ function Maincards(props) {
                                         pagination={{ clickable: true }}
                                         scrollbar={{ draggable: true }}
                                         onSwiper={(swiper) => console.log(swiper)}
-                                        onSlideChange={none()}>
+                                        onSlideChange={console.log("onSlideChange")}>
 
                                         <div className=''>
                                              <div className=''>

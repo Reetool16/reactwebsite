@@ -98,6 +98,23 @@ a {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.shwNme::before {
+  top: 100%;
+  right: 39px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0px;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(184, 184, 184, 0);
+  border-bottom-color: #ffffff;
+  border-width: 8px;
+
+  background-clip: padding-box;
+  transform: rotate(180deg);
+}
+
 .rltiv {
   position: relative;
 }
@@ -211,7 +228,7 @@ a {
 
 /*////////////// NavBar Start \\\\\\\\\\\\\\\\\  */
 .navbar_ {
-  height: 119px;
+  /* height: 119px; */
   padding-bottom: 0px;
   padding-top: 15px;
 }
@@ -516,7 +533,7 @@ a {
 }
 
 .ed_pop_ad {
-  padding-left: 30px;
+  padding-left: 0px;
   padding-top: 30px;
 }
 
