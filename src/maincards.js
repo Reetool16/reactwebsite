@@ -118,6 +118,7 @@ function Maincards(props) {
                                                                            title={item.title}
                                                                            publish={item.publish}
                                                                            author={item.author_details[0].name}
+                                                                           authornameslug={item.author_details[0].slug}
                                                                            incrval={item.author_details.length > 1 ? item.author_details[1].name : " "}
                                                                            athordetails="d-flex align_item fllex_wrrp"
                                                                            one={item.author_details.length > 1 ? "+1" : null}

@@ -103,6 +103,7 @@ function Vccpremium(props) {
                                                         authdet="manufact_authordate"
                                                         aotho="manufact_author"
                                                         author={item.author_details[0].name}
+                                                        authornameslug={item.author_details[0].slug}
                                                         athordetails="d-flex align_item fllex_wrrp"
                                                         incrval={item.author_details.length > 1 ? item.author_details[1].name : " "}
                                                         one={item.author_details.length > 1 ? "+1" : null}

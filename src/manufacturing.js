@@ -35,7 +35,10 @@ export default function Manufacturing(props) {
 
                             <ul className='d-flex'>
                                 <li className='manufact_authordate'>{moment(props.publish).format("Do MMM  ")}</li>
-                                <li className='manufact_author'>{props.item.stories_list[0].author_details[0].name}</li>
+                                <Link to={props.item.stories_list[0].author_details[0].slug}>
+                                    <li className='manufact_author'>{props.item.stories_list[0].author_details[0].name}</li>
+                                </Link>
+
                             </ul>
                             <button className='btn'>READ MORE</button>
                         </div>
@@ -86,6 +89,7 @@ export default function Manufacturing(props) {
                                     plusone="slidr_author plusONE"
                                     publish={item.publish}
                                     authdet="manufact_authordate"
+                                    authornameslug={item.author_details[0].slug}
                                     aotho="manufact_author"
                                     athordetails="d-flex align_item fllex_wrrp mnfact_crd_ul"
                                     author={item.author_details[0].name}

@@ -2,6 +2,7 @@ import React from 'react'
 import Onemaincard from './onemaincard'
 // import Premium from './premium';
 import moment from 'moment'
+import { Link } from 'react-router-dom'
 
 export default function Editor(props) {
     return (<>
@@ -26,7 +27,10 @@ export default function Editor(props) {
                                 </p>
                                 <ul className='d-flex'>
                                     <li className="manufact_authordate">{moment(props.publish).format("Do MMM  ")}</li>
-                                    <li className="manufact_author">{props.item.stories_list[0].author_details[0].name}</li>
+                                    <Link to={props.item.stories_list[0].author_details[0].slug}>
+                                        <li className="manufact_author">{props.item.stories_list[0].author_details[0].name}</li>
+                                    </Link>
+
                                 </ul>
                             </div>
                         </div>
@@ -56,6 +60,7 @@ export default function Editor(props) {
                                         titleslug={item.slug}
                                         publish={item.publish}
                                         author={item.author_details[0].name}
+                                        authornameslug={item.author_details[0].slug}
                                         authdet="manufact_authordate"
                                         aotho="manufact_author"
                                         athordetails="d-flex align_item fllex_wrrp"

@@ -28,7 +28,10 @@ function Onemaincard(props) {
                          </p>
                          <ul className={props.athordetails}>
                               <li className={props.authdet}>{moment(props.publish).format("Do MMM  ")}</li>
-                              <li className={props.aotho}>{props.author}</li>
+                              <Link to={props?.authornameslug || ""}>
+                                   <li className={props.aotho}>{props.author}</li>
+                              </Link>
+
                               <li className={props.plusone}> {props.one}</li>
                               <li className={props.nameshow}>{props.incrval}</li>
                          </ul>
